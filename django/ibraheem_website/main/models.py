@@ -81,3 +81,30 @@ class GalleryImage(models.Model):
     @classmethod
     def get_objects(cls, num=30):
         return cls.objects.filter(hidden=False).order_by('-pub_date')[:num]
+
+
+class Slide(models.Model):
+
+    id = models.IntegerField(primary_key=True)
+    hidden = models.BooleanField(default=False)
+
+    caption= models.CharField(max_length=200, blank=True)
+
+    image = models.ImageField(upload_to='images', blank=True)
+    image_url = models.CharField(max_length=200, blank=True)
+
+    link = models.CharField(max_length=200, blank=True)
+
+    def get_image_url(self):
+        try:
+            return self.image.url
+        except ValueError:
+            return self.image_url
+
+    def __str__(self):
+        return self.caption or ("Slide #%" % self.id)
+
+
+    @classmethod
+    def get_objects(cls, num=30):
+        return cls.objects.filter(hidden=False).order_by('-id')[:num]

@@ -2,13 +2,15 @@ from django.shortcuts import get_object_or_404
 from django.http import HttpResponse
 from django.template import loader
 
-from .models import Post, GalleryImage
+from .models import Post, GalleryImage, Slide
 
 def index(request):
     posts = Post.get_objects()
+    slides = Slide.get_objects()
     template = loader.get_template('main/index.html')
     context = {
         'posts': posts,
+        'slides':slides,
     }
     return HttpResponse(template.render(context, request))
 
