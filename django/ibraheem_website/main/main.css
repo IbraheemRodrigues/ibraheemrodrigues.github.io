@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+head, body {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: #EEE;
+    
+    font-family: 'Roboto';
+
+    overflow: hidden;
+}
+
+
+
+#main-scroll {
+    height: calc(100vh - 65px);
+
+    margin-top: 65px;
+
+    overflow-y: scroll;
+}
+
+#main-scroll::-webkit-scrollbar {
+    box-shadow: 0 7px 7px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+    background-color: #DDD;
+}
+
+#main-scroll::-webkit-scrollbar-thumb {
+    width: 15px;
+
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    background-color: #CCC;
+}
+
+#main-content {
+    width: 1060px;
+
+    margin: 0 auto;
+    padding-top: 15px;
+}
+
+.card {
+    margin: 10px 0;
+    padding: 10px;
+
+    background-color: white;
+
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}

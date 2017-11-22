@@ -1,0 +1,45 @@
+.info_new {
+    padding: 3px 7px 3px 10px;
+    
+    position: absolute;
+    top: 5px;
+    left: 0px;
+
+    z-index: 100;
+
+    background-color: #0C0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+    color: white;
+    font-size: 10px;
+}
+
+.info_id_date{
+    position: absolute;
+    top: 5px;
+    right: 7px;
+
+    z-index: 100;
+
+    text-align: right;
+    color: lightgrey;
+    font-size: 15px;
+}
+
+#title {
+    margin-bottom: 5px;
+}
+
+#description {
+    font-style: italic;
+}
+
+.line, line {
+    width: 100%;
+    height: 0;
+
+    display: block;
+
+    margin: 5px 0;
+    border-bottom: 1px solid lightgray;
+}

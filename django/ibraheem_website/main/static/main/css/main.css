@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+head, body {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: #EEE;
+    
+    font-family: 'Roboto';
+
+    overflow: hidden;
+}
+
+h1 {
+    margin: 15px 0;
+}
+
+p {
+    margin: 5px 0;
+}
+
+a {
+    color: #03C;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #03C;
+}
+
+nav {
+    width: 100vw; 
+    height: 70px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    box-sizing: border-box;
+    border-top: 3px solid #03C;
+
+    background-color: white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12), 0 2px 6px rgba(0,0,0,0.24);
+
+    font-size: 30px    
+
+
+}
+
+
+#nav-content {
+    width: 1060px;
+    height: 60px;
+
+    margin: 0 auto;
+}
+
+
+.nav-link {
+    height: 67px;
+
+    padding: 5px 15px;
+
+    box-shadow: none;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+    color: black;
+    text-decoration: none;
+
+    box-sizing: border-box;
+
+    line-height: 60px;
+    text-align: center;
+
+    float: left;
+
+}
+
+.nav-link:hover {
+    text-decoration: none;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 2px 6px rgba(0,0,0,0.24);
+}
+
+.nav-link:active {
+    box-shadow: 0 7px 7px rgba(0,0,0,0.25), 0 9px 9px rgba(0,0,0,0.22);
+}
+
+.nav-link:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-logo {
+    width: 55px;
+    height: 55px;
+    
+}
+
+.nav-link.img {
+    padding: 5px 6px;
+}
+
+.nav-link.right {
+    float: right;
+}
+
+
+
+#main-scroll {
+    height: calc(100vh - 65px);
+
+    margin-top: 65px;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#main-scroll::-webkit-scrollbar {
+    box-shadow: 0 7px 7px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+    background-color: #DDD;
+}
+
+#main-scroll::-webkit-scrollbar-thumb {
+    width: 15px;
+
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    background-color: #CCC;
+}
+
+#centred-content {
+    width: calc(100vw - 15px);
+    max-width: 1060px;
+
+    margin: 0 auto;
+    padding-top: 15px;
+}
+
+
+section, .card {
+    margin: 10px 0;
+    padding: 10px;
+
+    width: 100%;
+
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.hoverable {
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.hoverable:hover {
+    box-shadow: 0 7px 7px rgba(0,0,0,0.25), 0 9px 9px rgba(0,0,0,0.22);
+}

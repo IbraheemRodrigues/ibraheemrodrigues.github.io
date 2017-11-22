@@ -1,0 +1,57 @@
+.gallery.card {
+    margin: 5px;
+    padding: 0;
+
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+    width: calc(25% - 10px);
+    min-width: 200px;
+
+    text-decoration: none;
+    color: black;
+
+    display: block;
+    float: left;
+    
+}
+
+.gallery.card .id {
+    position: absolute;
+
+    top: 5px;
+    right: 7px;
+
+    z-index: 100;
+
+    color: lightgrey;
+    font-size: 15px;
+}
+
+.gallery.card img {
+    margin: 0 !important;
+
+    display: block;
+
+    width: 100%;
+}
+
+.gallery.card h2 {
+    margin: 10px;
+
+    font-size: 1.5em;
+    text-align: center;
+
+}
+
+.gallery.card p {
+    margin: 0;
+
+    height: 0;
+    overflow-y: hidden;
+}
+
+.gallery.card:hover p {
+    margin: 0 10px 10px 10px;
+
+    height: auto;
+}

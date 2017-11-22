@@ -1,0 +1,35 @@
+{% extends "main/base.html" %}
+{% load staticfiles %}
+
+{% block title %}
+Posts
+{% endblock title %}
+
+{% block viewname %}posts{% endblock viewname %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'main/css/posts.css' %}">
+{% endblock head %}
+
+
+{% block centred_content %}
+
+
+    <section>
+        <h1>Posts</h1>
+        <table id="post_list">
+            {% for p in posts %}
+
+                <tr class="post_entry" id="{{ p.id }}">
+                
+                        <td class="post_info post_id"><a href="{{ p.get_link }}" class="post_link">#{{ p.id }}</a></td>
+                        <td class="post_info post_title"><a href="{{ p.get_link }}" class="post_link">{{ p.title }}</a><br><span>{{ p.description }}</span></td>
+                        <td class="post_info post_date"><a href="{{ p.get_link }}" class="post_link">{{ p.pub_date.date }}</a></td>
+                
+                </tr>
+                {% endfor %}
+        </table>
+    </section>
+
+
+{% endblock centred_content %}

@@ -1,0 +1,74 @@
+.post.card {
+    margin: 5px;
+    padding: 0;
+
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+    width: calc(25% - 10px);
+    min-width: 200px;
+
+    text-decoration: none;
+    color: black;
+
+    display: block;
+    float: left;
+}
+
+.post.card.noimage {
+    padding-top: 20px;
+}
+
+.post.card .new {
+    padding: 3px 7px 3px 10px;
+
+    position: absolute;
+    top: 5px;
+    left: 0px;
+
+    z-index: 100;
+
+    background-color: #0C0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+    color: white;
+    font-size: 10px;
+}
+
+.post.card .id {
+    position: absolute;
+    top: 5px;
+    right: 7px;
+
+    z-index: 100;
+    color: lightgrey;
+    font-size: 15px;
+}
+
+.post.card img {
+    margin: 5%;
+
+    display: block;
+
+    width: 90%;
+}
+
+.post.card h2 {
+    margin: 10px;
+
+    font-size: 1.5em;
+    text-align: center;
+
+}
+
+.post.card p {
+    margin: 0;
+
+    height: 0;
+    overflow-y: hidden;
+}
+
+.post.card:hover p {
+    margin: 0 10px 10px 10px;
+
+    height: auto;
+}

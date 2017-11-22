@@ -1,0 +1,38 @@
+{% extends "main/base.html" %}
+{% load staticfiles %}
+
+{% block title %}
+Gallery
+{% endblock title %}
+
+{% block viewname %}gallery{% endblock viewname %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'main/css/gallery_cards.css' %}">
+
+
+{% endblock head %}
+
+
+{% block centred_content %}
+
+    {% for i in images %}
+        <a class="gallery card hoverable" href="{{ i.link }}" >
+
+
+
+            <img src="{{ i.get_image_url }}">
+
+            <span class="id">#{{ i.id }}</span>
+
+            {% if i.caption %}
+                <h2>{{ i.caption }}</h2>
+            {% endif %}
+
+            {% if i.description %}
+                <p>{{ i.description }}</p>
+            {% endif %}
+        </a>
+    {% endfor %}
+
+{% endblock centred_content %}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock title %} | Ibraheem Rodrigues</title>
+
+    <link rel="icon" href="img/logo-clip72p.png"/>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    {% block head %}{% endblock head %}
+
+</head>
+<body onload="$('nav').css('height', '70px');setTimeout(function() {$('.nav-link').css('font-size', '30px');$('nav').css('overflow', 'visible');}, 300);">
+    <nav id="index">
+        <div id="nav-content">
+            <a class="nav-link img" href="/"><img class="nav-logo" src="img/logo.svg" alt="&#x1F4CE;"></a>
+            
+            <a class="nav-link" href="/gallery.html">Gallery</a>
+            <a class="nav-link" href="/blosg.html">Blog</a>
+            <a class="nav-link" href="/about.html">About</a>
+
+            <a class="nav-link img right" href="https://github.com/IbraheemRodrigues"><img class="nav-logo" src="img/github.png" alt="GitHub"></a>
+        </div>
+    </nav>
+
+
+    <div id="main-scroll">
+    <div id="main-content">
+        {% block content %}{% endblock content %}
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla voluptatibus, alias amet doloribus voluptatem, eius, cumque excepturi nihil laboriosam saepe molestiae rem molestias aliquam? Minus voluptatum dignissimos consectetur corrupti dolore?</div>
+    </div>
+    </div>
+            
+
+</body>
+</html>

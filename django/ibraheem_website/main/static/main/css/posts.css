@@ -1,0 +1,48 @@
+#post_list {
+    border-collapse: collapse;
+
+    width: 100%;
+}
+
+
+#post_list tr {
+
+    border: solid lightgray;
+    border-width: 1px 0px;
+
+}
+
+.post_info {
+    padding: 10px 0;
+}
+
+.post_id {
+    width: 10%;
+}
+
+.post_title {
+    width: 70%;
+    font-size: 20px;
+}
+
+.post_title > span {
+    display: none;
+    font-size: 16px;
+}
+
+.post_title:hover > span {
+    display: inline;
+}
+
+.post_date {
+    width: 20%;
+
+    text-align: right;
+}
+
+.post_link {
+    text-decoration: none;
+    color: black;
+
+    display: inline-block;
+}

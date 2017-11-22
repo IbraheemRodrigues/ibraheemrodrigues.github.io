@@ -1,0 +1,38 @@
+{% extends "main/base.html" %}
+{% load staticfiles %}
+
+{% block title %}
+Home
+{% endblock title %}
+
+{% block viewname %}index{% endblock viewname %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'main/css/post_cards.css' %}">
+
+
+{% endblock head %}
+
+
+{% block centred_content %}
+
+    {% for p in posts %}
+        <a class="post card hoverable {% if not p.get_icon_url %}noimage{% endif %}" href="{{ p.get_link }}" >
+
+            {% if p.was_published_recently %}
+                <span class="new">NEW</span>
+            {% endif %}
+            <span class="id">#{{ p.id }}</span>
+
+            {% if p.get_icon_url %}
+                <img src="{{ p.get_icon_url }}">
+            {% endif %}
+
+            <h2>{{ p.title }}</h2>
+            {% if p.description %}
+                <p>{{ p.description }}</p>
+            {% endif %}
+        </a>
+    {% endfor %}
+
+{% endblock centred_content %}

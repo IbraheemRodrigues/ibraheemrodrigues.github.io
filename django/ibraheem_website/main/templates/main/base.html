@@ -1,0 +1,46 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock title %} | Ibraheem Rodrigues</title>
+
+    <link rel="icon" href="{% static 'main/img/logo-clip72p.png' %}"/>
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <style>
+        .nav-link#{% block viewname %}{% endblock viewname %} {
+            border-bottom: 3px solid #1976D2;
+        }
+    </style>
+
+    {% block head %}{% endblock head %}
+
+</head>
+<body>
+    <nav id="index">
+        <div id="nav-content">
+            <a class="nav-link img" id="index" href="/"><img class="nav-logo" src="{% static 'main/img/logo.svg' %}" alt="&#x1F4CE;"></a>
+            
+            <a class="nav-link" id="posts" href="/posts/">Posts</a>
+            <a class="nav-link" id="gallery" href="/gallery/">Gallery</a>
+            <a class="nav-link" id="about" href="/about/">About</a>
+
+            <a class="nav-link img right" id="github" href="https://github.com/IbraheemRodrigues"><img class="nav-logo" src="{% static 'main/img/github.png' %}" alt="GitHub"></a>
+        </div>
+    </nav>
+
+        {% block first_content %}{% endblock first_content %}
+    <div id="main-scroll">
+        {% block scroll_content %}{% endblock scroll_content %}
+    <div id="centred-content">
+        {% block centred_content %}{% endblock centred_content %}
+    </div>
+    </div>
+            
+
+</body>
+</html>

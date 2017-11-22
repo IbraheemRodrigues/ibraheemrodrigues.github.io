@@ -1,0 +1,52 @@
+{% extends "main/base.html" %}
+{% load staticfiles %}
+
+{% block title %}
+{{ post.title }}
+{% endblock title %}
+
+{% block viewname %}posts{% endblock viewname %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'main/css/post.css' %}">
+
+<style>
+    {{ post.special_css |safe}}
+</style>
+{% endblock head %}
+
+
+{% block centred_content %}
+
+
+    <section id="main">
+        {% if post.was_published_recently %}
+            <span class="info_new">NEW</span>
+        {% endif %}
+
+
+        <span class="info_id_date">#{{ post.id }}<br>{{ post.pub_date.date }}</span>
+
+
+        <h1 id="title">{{ post.title }}</h1>
+        
+        {% if post.description %}
+            <p id="description">{{ post.description }}</p>
+        {% endif %}
+
+        <line></line>
+
+        
+
+        {% if post.content %}
+            {{ post.content |safe }}
+        {% endif %}
+        
+    </section>
+
+    {% if post.extra_content %}
+       {{ post.extra_content |safe }}
+    {% endif %}
+
+
+{% endblock centred_content %}
