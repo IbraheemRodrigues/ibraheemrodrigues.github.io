@@ -102,7 +102,7 @@ class Slide(models.Model):
             return self.image_url
 
     def __str__(self):
-        return self.caption or ("Slide #%" % self.id)
+        return self.caption or ("Slide #%s" % self.id)
 
 
     @classmethod

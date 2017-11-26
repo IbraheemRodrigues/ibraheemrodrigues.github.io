@@ -21,7 +21,10 @@ Home
         {% for s in slides %}
             <a class="slide" href="{{ s.link }}" id="{{ s.id }}">
                 <img src="{{ s.get_image_url }}">
-                <h1 class="caption">{{ s.caption }}</h1>
+                {% if s.caption %}
+                    <h1 class="caption">{{ s.caption }}</h1>             
+                {% endif %}
+
             </a>
         {% endfor %}
 

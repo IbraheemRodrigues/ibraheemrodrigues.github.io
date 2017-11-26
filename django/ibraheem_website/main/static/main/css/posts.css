@@ -26,12 +26,19 @@
 }
 
 .post_title > span {
-    display: none;
+    max-height: 0;
     font-size: 16px;
+
+    display: block;
+    overflow: hidden;
+
+    font-weight: 300;
+
+    transition: max-height 0.3s;  
 }
 
 .post_title:hover > span {
-    display: inline;
+    max-height: 1000px;;
 }
 
 .post_date {
