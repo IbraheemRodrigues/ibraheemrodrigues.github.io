@@ -10,7 +10,7 @@ urlpatterns = [
     url(r'^post/(?P<post_id>-*[0-9]+)/$', views.post),
 
     url(r'^post/$', lambda req: redirect('/posts/')), # redirect /post/ to /posts/
-    url(r'^posts/(?P<p_id>-*[0-9]+)/$', lambda req, p_id: redirect('/post/%s/' % p_id)), #redirect /posts/123 to /post/123/
+    url(r'^posts/(-*[0-9]+)/$', lambda req, p_id: redirect('/post/%s/' % p_id)), #redirect /posts/123 to /post/123/
 
 
     url(r'^gallery/$', views.gallery),
