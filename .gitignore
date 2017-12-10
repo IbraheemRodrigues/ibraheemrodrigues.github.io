@@ -60,4 +60,11 @@ target/
 
 
 
-__pycache__/
+
+
+
+
+
+#remove django database(s)
+
+*.sqlite3

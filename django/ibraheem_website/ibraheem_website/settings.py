@@ -25,7 +25,10 @@ SECRET_KEY = 'y$gon5!+$)ne+-^$asn)6a#d+cxwv$_qyzpp6pm2k^s-6viz6v'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'oban.pythonanywhere.com',
+    'localhost',
+]
 
 
 # Application definition
