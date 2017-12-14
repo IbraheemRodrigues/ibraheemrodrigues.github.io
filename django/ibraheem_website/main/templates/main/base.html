@@ -11,12 +11,6 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <style>
-        .nav-link#{% block viewname %}{% endblock viewname %} {
-            border-bottom: 3px solid #1976D2;
-        }
-    </style>
-
     {% block head %}{% endblock head %}
 
 </head>
@@ -31,6 +25,13 @@
 
             <a class="nav-link img right" id="github" href="https://github.com/IbraheemRodrigues"><img class="nav-logo" src="{% static 'main/img/github.png' %}" alt="GitHub"></a>
         </div>
+
+        <script>
+            $("#nav-{% block viewname %}{% endblock viewname %}").addClass("active")
+            jeg = () => {
+                $("body").addClass("jeg")
+            }
+        </script>
     </nav>
 
         {% block first_content %}{% endblock first_content %}
