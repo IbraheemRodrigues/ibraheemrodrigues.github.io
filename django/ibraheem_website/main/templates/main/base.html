@@ -27,7 +27,7 @@
         </div>
 
         <script>
-            $("#nav-{% block viewname %}{% endblock viewname %}").addClass("active")
+            $(".nav-link#{% block viewname %}{% endblock viewname %}").addClass("active")
             jeg = () => {
                 $("body").addClass("jeg")
             }
