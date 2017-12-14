@@ -1,6 +1,8 @@
 .slideshow {
     width: 100%;
     height: calc(60vh + 20px);
+
+    padding: 0;
 }
 
 .slide {
@@ -18,7 +20,7 @@
 .slide img {
     margin: auto;
 
-    height: 60vh;
+    height: calc(60vh + 20px);
 
     display: block;
 
