@@ -1,8 +1,9 @@
 .slideshow {
     width: 100%;
-    height: calc(60vh + 20px);
+    height: calc(100vh);
 
     padding: 0;
+    margin: 0;
 }
 
 .slide {
@@ -20,7 +21,7 @@
 .slide img {
     margin: auto;
 
-    height: calc(60vh + 20px);
+    height: 100%;
 
     display: block;
 
@@ -44,13 +45,12 @@
 }
 
 .info {
-    background-color: #FFF7;
     box-shadow: 0 2px 6px rgba(0,0,0,0.12), 0 2px 6px rgba(0,0,0,0.24);
 }
 
 .info#timeleft {
     width: 100%;
-    height: 10px;
+    height: 20px;
 
     display: block;
 

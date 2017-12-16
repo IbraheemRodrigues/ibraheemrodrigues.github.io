@@ -3,19 +3,24 @@
 head, body {
     margin: 0;
     padding: 0;
-
 }
 
 body {
     padding-top: 70px;
 
     background: url("https://www.toptal.com/designers/subtlepatterns/patterns/circles-light.png");
-    
     font-family: 'Roboto';
+
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 body.jeg {
     background: url('https://www.toptal.com/designers/subtlepatterns/patterns/ignasi_pattern_s.png');
+}
+
+* {
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
 h1 {
@@ -58,11 +63,19 @@ nav {
     z-index: 500;
 }
 
+nav.frosted {
+    background-color: #FFF7;
+}
+
 
 #nav-content {
+    padding-right: 15px;
+
     width: 100%;
     max-width: 1060px;
     height: 60px;
+
+    box-sizing: border-box;
 
     margin: 0 auto;
 }
@@ -74,7 +87,6 @@ nav {
     padding: 5px 15px;
 
     box-shadow: none;
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 
     color: black;
     text-decoration: none;
@@ -140,9 +152,6 @@ section, .card {
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
-.hoverable {
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-}
 
 .hoverable:hover {
     box-shadow: 0 7px 7px rgba(0,0,0,0.25), 0 9px 9px rgba(0,0,0,0.22);
@@ -150,14 +159,12 @@ section, .card {
 
 
 footer {
+    margin-top: 50px;
 
     width: calc(100vw - 15px);
     height: 80px;
 
     clear: both;
-
-    position: absolute;
-    float: left;
 
     background-color: black;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
@@ -180,11 +187,15 @@ footer {
     position: relative;
 }
 
-.left.c {
+.clear-b {
+    clear: both;
+}
+
+.clear-l {
     clear: left;
 }
 
-.right.c {
+.clear-r {
     clear: right
 }
 
@@ -202,4 +213,8 @@ footer {
     width: calc(100vw - 15px);
     max-width: 1060px;
     box-sizing: border-box;
+}
+
+.frosted {
+    background-color: #FFFA;
 }

@@ -15,7 +15,7 @@ function setSlide(num) {
 }
 
 function nextSlide() {
-    setSlide( ids.length-1 <= currentSlide ? 0 : currentSlide+1 );
+    setSlide( ids.length-1 <= (currentSlide ? 0 : currentSlide+1) );
     $(".info#timeleft").css("width", "0");
     $(".info#timeleft").animate({"width": "100%"}, delayTime - 100);
 
@@ -27,16 +27,15 @@ function userSetSlide(num) {
 
     setSlide(num);
 
-    $(".info#timeleft").animate({"width": "0"}, 400, "swing", function() {
-        $(".info#timeleft").animate({"width": "100%"}, delayTime - 100);
+    $(".info#timeleft").css("width", "0");
+    $(".info#timeleft").animate({"width": "100%"}, delayTime - 100);
         
-        timer = setInterval(nextSlide, delayTime);
-    });
+    timer = setInterval(nextSlide, delayTime);;
 }
 
 //generate buttons
-for (num in ids) {
-    $("#button-container").append(`<button class="info hoverable" id="${num}" onclick="userSetSlide(${num})"></button>`)
-}
+// for (num in ids) {
+//     $("#button-container").append(`<button class="info frosted hoverable" id="${num}" onclick="userSetSlide(${num})></button>`)
+// }
 
 userSetSlide(currentSlide);

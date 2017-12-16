@@ -32,9 +32,6 @@
     display: block;
     overflow: hidden;
 
-    font-weight: 300;
-
-    transition: max-height 0.3s;  
 }
 
 .post_title:hover > span {
