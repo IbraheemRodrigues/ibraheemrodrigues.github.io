@@ -11,7 +11,7 @@ class PostAdmin(admin.ModelAdmin):
     fieldsets = (
         ('Meta', {
             'classes': ('collapse',),
-            'fields': ('id', 'hidden', 'pub_date', 'link')
+            'fields': ('id', 'hidden', 'pinned', 'pub_date')
         }),
         (None, {
             'fields': ('title', 'description', 'link', 'icon', 'icon_url')

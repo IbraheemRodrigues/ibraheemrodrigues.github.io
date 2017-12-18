@@ -72,7 +72,9 @@ Home
     {% for p in posts %}
         <a class="post card hoverable {% if not p.get_icon_url %}noimage{% endif %}" href="{{ p.get_link }}" >
 
-            {% if p.was_published_recently %}
+            {% if p.pinned %}
+                <span class="pinned"><i class="fa fa-thumbtack"></i></span>
+            {% elif p.was_published_recently %}
                 <span class="new">NEW</span>
             {% endif %}
             <span class="id">#{{ p.id }}</span>

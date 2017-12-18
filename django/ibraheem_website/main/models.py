@@ -7,21 +7,19 @@ class Post(models.Model):
 
     id = models.IntegerField(primary_key=True)
     hidden = models.BooleanField(default=False)
+    pinned = models.BooleanField(default=False)
 
     title = models.CharField(max_length=200)
     description = models.CharField(blank=True, max_length=400)
 
     pub_date = models.DateTimeField('date published', default=datetime.datetime.now)
-
     link = models.CharField(max_length=200, blank=True)
 
     icon = models.ImageField(upload_to='images', blank=True)
     icon_url = models.CharField(max_length=200, blank=True)
 
     content = models.TextField(blank=True)
-
     special_css = models.TextField('Special CSS', blank=True)
-
     extra_content = models.TextField(blank=True)
 
     
@@ -44,11 +42,7 @@ class Post(models.Model):
     
     @classmethod
     def get_objects(cls, num=30):
-        return cls.objects.filter(hidden=False).order_by('-pub_date')[:num]
-
-    @classmethod
-    def get_objects(cls, num=30):
-        return cls.objects.filter(hidden=False).order_by('-pub_date')[:num]
+        return cls.objects.filter(hidden=False).order_by('-pinned', '-pub_date')[:num]
 
     
 
