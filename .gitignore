@@ -67,4 +67,5 @@ target/
 
 #remove django database(s)
 
-*.sqlite3
+db.sqlite3
+django/ibraheem_website/db.sqlite3
