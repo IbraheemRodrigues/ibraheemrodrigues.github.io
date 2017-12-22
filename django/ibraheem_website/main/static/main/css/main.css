@@ -9,6 +9,7 @@ body {
     padding-top: 70px;
 
     background: url("https://www.toptal.com/designers/subtlepatterns/patterns/circles-light.png");
+    /* Background pattern from sublte patterns */
     font-family: 'Roboto';
 
     overflow-x: hidden;
@@ -17,6 +18,7 @@ body {
 
 body.jeg {
     background: url('https://www.toptal.com/designers/subtlepatterns/patterns/ignasi_pattern_s.png');
+    /* Background pattern from sublte patterns */
 }
 
 * {
