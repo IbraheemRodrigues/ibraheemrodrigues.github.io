@@ -6,46 +6,37 @@
 
 
 #post_list tr {
-
     border: solid lightgray;
     border-width: 1px 0px;
-
 }
 
-#post_list tr.new::before {
+#post_list tr.new .post_id::before, #post_list tr.pinned .post_id::before {
+    z-index: 100;
+    position: absolute;
+    left: 0;
+
+
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+    color: white;
+    font-size: 10px;
+}
+
+#post_list tr.new .post_id::before {
     padding: 3px 7px 3px 10px;
 
     content: "NEW";
 
-    position: absolute;
-    top: 5px;
-    left: 0px;
-
-    z-index: 100;
-
     background-color: #0C0;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-
-    color: white;
-    font-size: 10px;
 }
 
-#post_list tr.pinned::before {
-    padding: 3px 7px 3px 10px;
+#post_list tr.pinned .post_id::before {
+    padding: 3px 10px 3px 10px;
 
     content: "📌";
 
-    position: absolute;
-    top: 5px;
-    left: 0px;
+    background-color: #40C;
 
-    z-index: 100;
-
-    background-color: #50F;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-
-    color: white;
-    font-size: 10px;
 }
 
 .post_info {

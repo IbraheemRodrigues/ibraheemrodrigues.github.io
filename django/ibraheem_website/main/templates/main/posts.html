@@ -20,7 +20,7 @@ Posts
         <table id="post_list">
             {% for p in posts %}
 
-                <tr class="post_entry" id="{{ p.id }}">
+                <tr class="post_entry {% if p.pinned %} pinned {% elif p.was_published_recently %} new {% endif %}" id="{{ p.id }}">
                 
                         <td class="post_info post_id"><a href="{{ p.get_link }}" class="post_link">#{{ p.id }}</a></td>
                         <td class="post_info post_title"><a href="{{ p.get_link }}" class="post_link">{{ p.title }}</a><br><span>{{ p.description }}</span></td>
