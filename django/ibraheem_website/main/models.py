@@ -42,7 +42,7 @@ class Post(models.Model):
     
     @classmethod
     def get_objects(cls, num=30):
-        return cls.objects.filter(hidden=False).order_by('-pinned', '-pub_date')[:num]
+        return cls.objects.filter(hidden=False).order_by('-pinned', '-pub_date', '-id')[:num]
 
     
 
