@@ -12,6 +12,12 @@
 
     position: relative;
     overflow: hidden;
+
+    display: none;
+}
+
+.slide.show {
+    display: block;
 }
 
 .slide, .slide * {
@@ -48,7 +54,7 @@
     box-shadow: 0 2px 6px rgba(0,0,0,0.12), 0 2px 6px rgba(0,0,0,0.24);
 }
 
-.info#timeleft {
+.info#time-indicator {
     width: 100%;
     height: 20px;
 

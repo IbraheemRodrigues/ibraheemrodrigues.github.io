@@ -1,41 +1,38 @@
-var currentSlide = 0;
-
-var delayTime = 7000;
-
+var current_slide = -1;
+var delay_time = 7000;
 var timer;
+var num_slides = slide_ids.length;
 
-function setSlide(num) {
-    currentSlide = num;
+function set_slide(target_slide) {
+    current_slide = target_slide % num_slides;
 
-    $("button.info").removeClass('this');
-    $(`button#${String(num)}.info`).addClass('this');
+    var slide_id = slide_ids[current_slide];
 
-    $(".slide").css("display", "none");
-    $(`#${String(ids[num])}.slide`).css("display", "block");
+    console.log(slide_id);
+
+    $('.slide').removeClass('show')
+    $(`.slide#${slide_id}`).addClass('show')
 }
 
-function nextSlide() {
-    setSlide( ids.length-1 <= (currentSlide ? 0 : currentSlide+1) );
-    $(".info#timeleft").css("width", "0");
-    $(".info#timeleft").animate({"width": "100%"}, delayTime - 100);
+function slide_loop() {
+    set_slide(current_slide + 1);
+    $('.info#time-inidcator').css({'max-width': '0%'});
 
+    // $('.info#time-indicator').stop()
+    $('.info#time-indicator').animate({'max-width': '100%'}, delay_time - 500);
 }
 
-function userSetSlide(num) {
+function reset_loop() {
     clearInterval(timer);
-    $(".info#timeleft").stop();
-
-    setSlide(num);
-
-    $(".info#timeleft").css("width", "0");
-    $(".info#timeleft").animate({"width": "100%"}, delayTime - 100);
-        
-    timer = setInterval(nextSlide, delayTime);;
+    
+    slide_loop();
+    timer = setInterval(slide_loop, delay_time);
 }
 
 //generate buttons
-// for (num in ids) {
-//     $("#button-container").append(`<button class="info frosted hoverable" id="${num}" onclick="userSetSlide(${num})></button>`)
-// }
+for (id in slide_ids) {
+    $('#button-container').append(`<button class=\'info frosted hoverable\' id=\'${id}\' onclick=\'reset_slide_to(${id});\'></button>`);
+}
 
-userSetSlide(currentSlide);
+reset_loop();
+
