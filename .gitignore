@@ -57,15 +57,3 @@ docs/_build/
 
 # PyBuilder
 target/
-
-
-
-
-
-
-
-
-#remove django database(s)
-
-db.sqlite3
-django/ibraheem_website/db.sqlite3
