@@ -35,14 +35,14 @@
             <a class="nav-link" id="gallery" href="/gallery/">Gallery</a>
             <a class="nav-link" id="about" href="/about/">About</a>
 
-            <a class="nav-link img right" id="github" href="https://github.com/IbraheemRodrigues"><img class="nav-logo" src="{% static 'main/img/github.png' %}" alt="GitHub"></a>
-            <a class="nav-link img right" id="stackoverflow" href="https://stackoverflow.com/users/8077162/ibraheem-rodrigues"><img class="nav-logo" src="{% static 'main/img/stackoverflow.svg' %}" alt="StackOverflow"></a>
+            <a class="nav-link img right" id="github" href="https://github.com/IbraheemRodrigues" target="_blank"><img class="nav-logo" src="{% static 'main/img/github.png' %}" alt="GitHub"></a>
+            <a class="nav-link img right" id="stackoverflow" href="https://stackoverflow.com/users/8077162/ibraheem-rodrigues" target="_blank"><img class="nav-logo" src="{% static 'main/img/stackoverflow.svg' %}" alt="StackOverflow"></a>
         </div>
 
         <script>
             $(".nav-link#{% block viewname %}{% endblock viewname %}").addClass("active")
             jeg = () => {
-                $("body").addClass("jeg")
+                $("body").toggleClass("jeg")
             }
         </script>
     </nav>
