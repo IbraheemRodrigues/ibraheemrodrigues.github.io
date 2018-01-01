@@ -3,7 +3,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <title>{% block title %}{% endblock title %} | Ibraheem Rodrigues</title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -31,12 +33,16 @@
         <div id="nav-content">
             <a class="nav-link img" id="index" href="/"><img class="nav-logo" src="{% static 'main/img/logo.svg' %}" alt="&#x1F4CE;"></a>
             
-            <a class="nav-link" id="posts" href="/posts/">Posts</a>
-            <a class="nav-link" id="gallery" href="/gallery/">Gallery</a>
-            <a class="nav-link" id="about" href="/about/">About</a>
+            <a class="nav-link nav-level" id="posts" href="/posts/">Posts</a>
+            <a class="nav-link nav-level" id="gallery" href="/gallery/">Gallery</a>
+            <a class="nav-link nav-level" id="about" href="/about/">About</a>
 
-            <a class="nav-link img right" id="github" href="https://github.com/IbraheemRodrigues" target="_blank"><img class="nav-logo" src="{% static 'main/img/github.png' %}" alt="GitHub"></a>
-            <a class="nav-link img right" id="stackoverflow" href="https://stackoverflow.com/users/8077162/ibraheem-rodrigues" target="_blank"><img class="nav-logo" src="{% static 'main/img/stackoverflow.svg' %}" alt="StackOverflow"></a>
+            <span class="nav-level" id="social">
+                <a class="nav-link img right" id="github" href="https://github.com/IbraheemRodrigues" target="_blank"><img class="nav-logo" src="{% static 'main/img/github.png' %}" alt="GitHub"></a>
+                <a class="nav-link img right" id="stackoverflow" href="https://stackoverflow.com/users/8077162/ibraheem-rodrigues" target="_blank"><img class="nav-logo" src="{% static 'main/img/stackoverflow.svg' %}" alt="StackOverflow"></a>
+            </span>
+
+            <a class="nav-toggler nav-link" href="javascript:void(0)" onclick="$('nav').toggleClass('open');">&#9776;</a>
         </div>
 
         <script>
