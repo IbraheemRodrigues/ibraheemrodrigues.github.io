@@ -1,5 +1,6 @@
 {% extends "main/base.html" %}
 {% load staticfiles %}
+{% load modulo %}
 
 {% block title %}
 Home
@@ -68,14 +69,17 @@ Home
 
 
 {% block centred_content %}
-
-    {% for p in posts %}
-        <a class="post card hoverable {% if not p.get_icon_url %} noimage {% endif %} 
-        {% if p.pinned %} pinned {% elif p.was_published_recently %} new {% endif %}" 
-    href="{{ p.get_link }} " >
+<div id="post-cards" >
+    <div id="1">
+    {% for i, p in enum_posts %}
+        <a class="post-card hoverable {% if not p.get_icon_url %} noimage {% endif %} 
+                {% if p.pinned %} pinned {% elif p.was_published_recently %} new {% endif %} 
+                col{{i |mod:2 |add:1}}if2 col{{i |mod:3 |add:1}}if3 col{{i |mod:4 |add:1}}if4
+                " 
+                href="{{ p.get_link }} " id="{{i}}" >
 
             {% comment %} {% if p.pinned %}
-                <span class="pinned"><i class="fa fa-thumbtack"></i></span>
+                <span class="pinned">&pointint;</span>
             {% elif p.was_published_recently %}
                 <span class="new">NEW</span>
             {% endif %} {% endcomment %}
@@ -91,5 +95,40 @@ Home
             {% endif %}
         </a>
     {% endfor %}
+    </div>
+    <div id="2"></div>
+    <div id="3"></div>
+    <div id="4"></div>
 
+    <script>
+        function cardResize() {
+            const width = $(document).width(),
+                  height = $(document).height();
+
+            if (width < 400) {
+                $(".post-card").sort(cardSort).appendTo("#post-cards > #1");
+            } else if (width >= 400 && width < 600) {
+                $(".post-card.col1if2").sort(cardSort).appendTo("#post-cards > #1");
+                $(".post-card.col2if2").sort(cardSort).appendTo("#post-cards > #2");
+            } else if (width >= 600 && width < 800) {
+                $(".post-card.col1if3").sort(cardSort).appendTo("#post-cards > #1");
+                $(".post-card.col2if3").sort(cardSort).appendTo("#post-cards > #2");
+                $(".post-card.col3if3").sort(cardSort).appendTo("#post-cards > #3");
+            } else {
+                $(".post-card.col1if4").sort(cardSort).appendTo("#post-cards > #1");
+                $(".post-card.col2if4").sort(cardSort).appendTo("#post-cards > #2");
+                $(".post-card.col3if4").sort(cardSort).appendTo("#post-cards > #3");
+                $(".post-card.col4if4").sort(cardSort).appendTo("#post-cards > #4");
+            }
+        }
+
+        function cardSort(a, b) {
+            return parseInt($(a).attr("id")) - parseInt($(b).attr("id"));
+        }
+
+        $(window).resize(cardResize);
+        cardResize();
+
+    </script>
+</div>
 {% endblock centred_content %}

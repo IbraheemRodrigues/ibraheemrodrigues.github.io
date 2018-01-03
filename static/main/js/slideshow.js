@@ -16,7 +16,7 @@ function slide_loop() {
     set_slide(current_slide + 1);
 
     $('.info#time-indicator').css({'width': '0vw'});
-    setTimeout(() => {$('.info#time-indicator').animate({'width': '100vw'}, delay_time - 500);}, 300)
+    setTimeout(function() {$('.info#time-indicator').animate({'width': '100vw'}, delay_time - 500);}, 300)
 
 }
 

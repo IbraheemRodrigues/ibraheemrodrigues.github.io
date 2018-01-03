@@ -7,9 +7,7 @@ head, body {
 
 body {
     padding-top: 70px; /*space for navbar*/
-
-    min-height: calc(100vh - 70px); /*100vh - space for navbar*/
-
+    
     background: url("/static/main/img/circles-light.png");
     /* Background pattern from sublte patterns (toptal.com)*/
     font-family: 'Roboto';
@@ -32,9 +30,6 @@ body:after {
 
     display: table;
     clear: both;
-}
-* {
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
 h1 {
@@ -75,6 +70,8 @@ nav {
     font-size: 4vh;
 
     z-index: 500;
+
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
 nav.frosted {
@@ -86,7 +83,7 @@ nav.frosted {
     padding-right: 15px;
 
     width: 100%;
-    max-width: 1060px;
+    max-width: 1000px;
     height: 100%;
 
     box-sizing: border-box;
@@ -208,6 +205,9 @@ section, .card {
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
+.hoverable {
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
 
 .hoverable:hover {
     box-shadow: 0 7px 7px rgba(0,0,0,0.25), 0 9px 9px rgba(0,0,0,0.22);
@@ -215,8 +215,6 @@ section, .card {
 
 
 footer {
-    margin-top: 50px;
-
     width: 100vw;
     min-height: 80px;
 
@@ -244,6 +242,16 @@ footer {
     position: relative;
 }
 
+#footer-content .right {
+    display: none;
+}
+
+@media (min-width: 350px) {
+    #footer-content .right {
+        display: initial;
+    }
+}
+
 .clear-b {
     clear: both;
 }
@@ -268,7 +276,7 @@ footer {
 
 .middle {
     width: calc(100vw - 15px);
-    max-width: 1060px;
+    max-width: 1000px;
     box-sizing: border-box;
 }
 

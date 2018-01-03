@@ -9,7 +9,7 @@ def index(request):
     slides = Slide.get_objects()
     template = loader.get_template('main/index.html')
     context = {
-        'posts': posts,
+        'enum_posts': enumerate(posts),
         'slides':slides,
     }
     return HttpResponse(template.render(context, request))
