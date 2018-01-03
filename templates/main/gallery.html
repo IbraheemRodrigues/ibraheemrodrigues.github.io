@@ -13,11 +13,10 @@ Gallery
 
 {% endblock head %}
 
-
 {% block centred_content %}
 
     {% for i in images %}
-        <a class="gallery card hoverable" href="{{ i.link }}" >
+        <a class="gallery card hoverable" href="{% if i.link %}{{ i.link }}{% else %}javascript:void(0){% endif %}" >
 
 
 

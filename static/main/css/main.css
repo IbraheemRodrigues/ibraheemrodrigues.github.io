@@ -8,6 +8,8 @@ head, body {
 body {
     padding-top: 70px; /*space for navbar*/
     
+    min-height: calc(100vh - 70px);
+
     background: url("/static/main/img/circles-light.png");
     /* Background pattern from sublte patterns (toptal.com)*/
     font-family: 'Roboto';
