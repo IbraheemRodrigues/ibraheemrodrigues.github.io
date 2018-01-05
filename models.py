@@ -3,6 +3,8 @@ import datetime
 from django.db import models
 from django.utils import timezone
 
+from filer.fields.image import FilerImageField
+
 class Post(models.Model):
 
     id = models.IntegerField(primary_key=True)
@@ -15,7 +17,7 @@ class Post(models.Model):
     pub_date = models.DateTimeField('date published', default=datetime.datetime.now)
     link = models.CharField(max_length=200, blank=True)
 
-    icon = models.ImageField(upload_to='images', blank=True)
+    icon = FilerImageField(related_name="icon_image")
     icon_url = models.CharField(max_length=200, blank=True)
 
     content = models.TextField(blank=True)
@@ -57,7 +59,7 @@ class GalleryImage(models.Model):
 
     pub_date = models.DateTimeField('date published', default=datetime.datetime.now)
 
-    image = models.ImageField(upload_to='images', blank=True)
+    image = FilerImageField(related_name="gallery_image")
     image_url = models.CharField(max_length=200, blank=True)
 
     link = models.CharField(max_length=200, blank=True)
@@ -84,7 +86,7 @@ class Slide(models.Model):
 
     caption= models.CharField(max_length=200, blank=True)
 
-    image = models.ImageField(upload_to='images', blank=True)
+    image = FilerImageField(related_name="slide_image")
     image_url = models.CharField(max_length=200, blank=True)
 
     link = models.CharField(max_length=200, blank=True)
