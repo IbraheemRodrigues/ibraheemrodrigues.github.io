@@ -153,10 +153,6 @@ nav.open .nav-level, nav.open .nav-link#index {
     nav.open .nav-level.right {
         float: right;
     }
-
-    #social .nav-link {
-        float: right;
-    }
 }
 
 /* .nav-level {display: none;}
