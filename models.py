@@ -17,7 +17,7 @@ class Post(models.Model):
     pub_date = models.DateTimeField('date published', default=datetime.datetime.now)
     link = models.CharField(max_length=200, blank=True)
 
-    icon = FilerImageField(related_name="icon_image")
+    icon = FilerImageField(related_name="icon_image", null=True, blank=True)
     icon_url = models.CharField(max_length=200, blank=True)
 
     content = models.TextField(blank=True)
@@ -59,7 +59,7 @@ class GalleryImage(models.Model):
 
     pub_date = models.DateTimeField('date published', default=datetime.datetime.now)
 
-    image = FilerImageField(related_name="gallery_image")
+    image = FilerImageField(related_name="gallery_image", null=True, blank=True)
     image_url = models.CharField(max_length=200, blank=True)
 
     link = models.CharField(max_length=200, blank=True)
@@ -86,7 +86,7 @@ class Slide(models.Model):
 
     caption= models.CharField(max_length=200, blank=True)
 
-    image = FilerImageField(related_name="slide_image")
+    image = FilerImageField(related_name="slide_image", null=True, blank=True)
     image_url = models.CharField(max_length=200, blank=True)
 
     link = models.CharField(max_length=200, blank=True)
