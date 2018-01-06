@@ -4,6 +4,8 @@
 
     padding: 0;
     margin: 0;
+
+    position: relative;
 }
 
 .slide {
@@ -24,6 +26,10 @@
     color: black;
 }
 
+.slide:hover {
+    text-decoration: none;
+}
+
 .slide img {
     margin: auto;
 
@@ -38,51 +44,53 @@
     right: -9999px;
 }
 
-.slide .caption {
-    padding: 10px;
 
-    display: inline-block;
+.slide .caption {
+    padding: 5px;
+
+    display: inline;
     
-    position: absolute;
-    left: 10%;
-    top: 70%;
+    position: relative;
+    top: 65%;
+    left: 10px;
 
     background-color: white;
 
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
-.info {
+.slideshow .info {
     box-shadow: 0 2px 6px rgba(0,0,0,0.12), 0 2px 6px rgba(0,0,0,0.24);
 }
 
-.info#time-indicator {
-    height: 20px;
+.slideshow .info#time-indicator {
+    height: 25px;
 
-    display: inline-block;
+    display: block;
 
     position: relative;
-    bottom: 20px;
+    bottom: 25px;
 }
 
-#button-container {
-    margin: 0 auto;
+.slideshow #button-container {
+    width: 100%;
 
-    display: flex;
-    justify-content: center;
+    display: block;
+    text-align: center;
 
     position: absolute;
     bottom: 10%;
-    left: 50%;
 
     z-index: 10;
 }
 
-button.info {
-    margin: 5px;
+.slideshow button.info {
+    margin: 0 5px;
 
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
+
+    display: inline-block;
 
     border-radius: 50%;
     border: none;
@@ -91,4 +99,19 @@ button.info {
 
 button.info.this {
     background-color: white;
+}
+
+@media only screen and (min-width: 400px) {
+    .slide .caption {
+        padding: 10px;
+
+        left: 10%;
+        top: 70%;
+
+        font-size: 1.5em;
+    }
+
+    .slideshow #button-container {
+        bottom: 5%;
+    }
 }
