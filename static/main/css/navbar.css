@@ -66,7 +66,7 @@ nav.open .nav-level, nav.open .nav-link#index {
 }
 
 .nav-link#index {
-    padding-left: 10px;
+    margin-left: 10px;
 }
 
 .nav-link:hover, .nav-link.active {
