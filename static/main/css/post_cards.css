@@ -25,17 +25,11 @@
     }
 }
 
-.card-column {
-    display: grid;
-    grid-gap: 10px;
-}
-
-
-
 .post-card {
-    margin: 0;
+    margin: 10px 0;
     padding: 0;
 
+    display: block;
     position: relative;
 
     background-color: white;
