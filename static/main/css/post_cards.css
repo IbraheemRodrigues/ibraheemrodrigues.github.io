@@ -1,13 +1,13 @@
 #post-cards {
+    margin: 5px 0 ;
+
     width: 100%;
+
     display: grid;
     grid-template-columns: 1fr;
-}
 
-#post-cards > #1 {grid-column: 1;}
-#post-cards > #2 {grid-column: 2;}
-#post-cards > #3 {grid-column: 3;}
-#post-cards > #4 {grid-column: 4;}
+    grid-gap: 10px;
+}
 
 @media only screen and (min-width:400px) {
     #post-cards {
@@ -25,13 +25,17 @@
     }
 }
 
+.card-column {
+    display: grid;
+    grid-gap: 10px;
+}
+
 
 
 .post-card {
-    margin: 10px 5px;
+    margin: 0;
     padding: 0;
 
-    display: block;
     position: relative;
 
     background-color: white;

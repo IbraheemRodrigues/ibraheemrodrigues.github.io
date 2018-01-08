@@ -20,7 +20,7 @@ Home
 {% endblock head %}
 
 {% block first_content %}
-    <section class="slideshow">
+    <section class="slideshow floating no-p">
         
         {% for s in slides %}
             <a class="slide" href="{{ s.link }}" id="{{ s.id }}">
@@ -69,8 +69,9 @@ Home
 
 
 {% block centred_content %}
-<div id="post-cards" >
-    <div id="1">
+<h1 class="floating title">Recent Posts:</h1>
+<section id="post-cards" >
+    <div class="card-column" id="1">
     {% for i, p in enum_posts %}
         <a class="post-card hoverable {% if not p.get_icon_url %} noimage {% endif %} 
                 {% if p.pinned %} pinned {% elif p.was_published_recently %} new {% endif %} 
@@ -96,9 +97,9 @@ Home
         </a>
     {% endfor %}
     </div>
-    <div id="2"></div>
-    <div id="3"></div>
-    <div id="4"></div>
+    <div class="card-column" id="2"></div>
+    <div class="card-column" id="3"></div>
+    <div class="card-column" id="4"></div>
 
     <script>
         function cardResize() {
@@ -130,5 +131,5 @@ Home
         cardResize();
 
     </script>
-</div>
+</section>
 {% endblock centred_content %}
