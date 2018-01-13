@@ -34,7 +34,7 @@ class Post(models.Model):
     def get_icon_url(self):
         try:
             return self.icon.url
-        except ValueError:
+        except (ValueError, AttributeError):
             return self.icon_url
 
 
@@ -67,7 +67,7 @@ class GalleryImage(models.Model):
     def get_image_url(self):
         try:
             return self.image.url
-        except ValueError:
+        except (ValueError, AttributeError):
             return self.image_url
 
     def __str__(self):
@@ -94,7 +94,7 @@ class Slide(models.Model):
     def get_image_url(self):
         try:
             return self.image.url
-        except ValueError:
+        except (ValueError, AttributeError):
             return self.image_url
 
     def __str__(self):

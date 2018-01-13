@@ -17,6 +17,8 @@ nav {
     z-index: 500;
 
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+    overflow: hidden;
 }
 
 nav.frosted {
@@ -115,10 +117,10 @@ nav.open .nav-level, nav.open .nav-link#index {
 }
 
 #social .nav-link {
-    height: calc(8vh - 3px);
+    height: 8vh;
 
     border-left: none;
-    border-bottom: 3px solid transparent;
+    border-bottom: none;
 
     float: left;
 }
@@ -152,6 +154,10 @@ nav.open .nav-level, nav.open .nav-link#index {
 
     nav.open .nav-level.right {
         float: right;
+    }
+
+    #social .nav-link:hover, #social .nav-link.active  {
+        height: calc(8vh - 3px);
     }
 }
 

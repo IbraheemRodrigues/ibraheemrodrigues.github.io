@@ -44,14 +44,15 @@
 }
 
 .post_id {
-    width: 10%;
+    /* width: 10%; */
+
+    padding-left: 25px;
 
     text-align: right;
 }
 
 .post_title {
-    width: 70%;
-    font-size: 20px;
+    font-size: 1.3em;
 }
 
 .post_title > span {
@@ -68,8 +69,6 @@
 }
 
 .post_date {
-    width: 20%;
-
     text-align: right;
 }
 

@@ -43,7 +43,7 @@ def gallery(request):
     images = GalleryImage.get_objects()
     template = loader.get_template('main/gallery.html')
     context = {
-        'images': images,
+        'enum_images': enumerate(images),
     }
     return HttpResponse(template.render(context, request))
 

@@ -1,5 +1,6 @@
 {% extends "main/base.html" %}
 {% load staticfiles %}
+{% load modulo %}
 
 {% block title %}
 Gallery
@@ -15,23 +16,67 @@ Gallery
 
 {% block centred_content %}
 
-    {% for i in images %}
-        <a class="gallery card hoverable" href="{% if i.link %}{{ i.link }}{% else %}javascript:void(0){% endif %}" >
+
+
+<h1 class="floating title">Le Gallery:</h1>
+<section id="gallery-cards" >
+    <div class="card-column" id="1">
+        {% for i, img in enum_images %}
+        <a class="gallery-card hoverable
+                  col{{i |mod:2 |add:1}}if2 col{{i |mod:3 |add:1}}if3 col{{i |mod:4 |add:1}}if4
+                  " 
+           href="{% if img.link %}{{ img.link }}{% else %}javascript:void(0){% endif %}"
+        >
 
 
 
-            <img src="{{ i.get_image_url }}">
+            <img src="{{ img.get_image_url }}">
 
-            <span class="id">#{{ i.id }}</span>
+            <span class="id">#{{ img.id }}</span>
 
-            {% if i.caption %}
-                <h2>{{ i.caption }}</h2>
+            {% if img.caption %}
+                <h2>{{ img.caption }}</h2>
             {% endif %}
 
-            {% if i.description %}
-                <p>{{ i.description }}</p>
+            {% if img.description %}
+                <p>{{ img.description }}</p>
             {% endif %}
         </a>
     {% endfor %}
+    </div>
+    <div class="card-column" id="2"></div>
+    <div class="card-column" id="3"></div>
+    <div class="card-column" id="4"></div>
 
+    <script>
+        function cardResize() {
+            const width = $(document).width(),
+                    height = $(document).height();
+
+            if (width < 400) {
+                $(".gallery-card").sort(cardSort).appendTo("#gallery-cards > #1");
+            } else if (width >= 400 && width < 600) {
+                $(".gallery-card.col1if2").sort(cardSort).appendTo("#gallery-cards > #1");
+                $(".gallery-card.col2if2").sort(cardSort).appendTo("#gallery-cards > #2");
+            } else if (width >= 600 && width < 800) {
+                $(".gallery-card.col1if3").sort(cardSort).appendTo("#gallery-cards > #1");
+                $(".gallery-card.col2if3").sort(cardSort).appendTo("#gallery-cards > #2");
+                $(".gallery-card.col3if3").sort(cardSort).appendTo("#gallery-cards > #3");
+            } else {
+                $(".gallery-card.col1if4").sort(cardSort).appendTo("#gallery-cards > #1");
+                $(".gallery-card.col2if4").sort(cardSort).appendTo("#gallery-cards > #2");
+                $(".gallery-card.col3if4").sort(cardSort).appendTo("#gallery-cards > #3");
+                $(".gallery-card.col4if4").sort(cardSort).appendTo("#gallery-cards > #4");
+            }
+        }
+
+        function cardSort(a, b) {
+            return parseInt($(a).attr("id")) - parseInt($(b).attr("id"));
+        }
+
+        $(window).resize(cardResize);
+        cardResize();
+
+    </script>
+</section>
 {% endblock centred_content %}
