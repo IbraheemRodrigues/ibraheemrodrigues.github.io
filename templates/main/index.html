@@ -73,7 +73,7 @@ Home
 <section id="post-cards" >
     <div class="card-column" id="1">
     {% for i, p in enum_posts %}
-        <a class="post-card hoverable {% if not p.icon or not p.icon_url %} noimage {% endif %} 
+        <a class="post-card hoverable {% if not p.icon and not p.icon_url %} noimage {% endif %} 
                 {% if p.pinned %} pinned {% elif p.was_published_recently %} new {% endif %} 
                 col{{i |mod:2 |add:1}}if2 col{{i |mod:3 |add:1}}if3 col{{i |mod:4 |add:1}}if4
                 " 
