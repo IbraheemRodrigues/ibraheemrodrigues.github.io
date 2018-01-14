@@ -90,8 +90,11 @@ class GalleryImage(models.Model):
 
 
     @classmethod
-    def get_objects(cls, num=30):
-        return cls.objects.filter(hidden=False).order_by('-pub_date')[:num]
+    def get_objects(cls, num=0):
+        objs = cls.objects.filter(hidden=False).order_by('-pub_date')
+        if num:
+            objs = objs[:num]
+        return objs
 
 
 class Slide(models.Model):
@@ -117,5 +120,5 @@ class Slide(models.Model):
 
 
     @classmethod
-    def get_objects(cls, num=30):
+    def get_objects(cls, num=4):
         return cls.objects.filter(hidden=False).order_by('-id')[:num]
