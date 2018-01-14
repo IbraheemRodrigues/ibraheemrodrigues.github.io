@@ -134,3 +134,13 @@ section {
 .frosted {
     background-color: #FFFA;
 }
+
+.line, line {
+    width: 100%;
+    height: 0;
+
+    display: block;
+
+    margin: 5px 0;
+    border-bottom: 1px solid lightgray;
+}

@@ -15,21 +15,21 @@ Posts
 {% block centred_content %}
 
 
-    <section class="floating">
-        <h1>Posts</h1>
-        <table id="post_list">
-            {% for p in posts %}
+<section class="floating">
+    <h1>Posts</h1>
+    <line></line>
+    <div id="post_list">
+        {% for p in posts %}
 
-                <tr class="post_entry {% if p.pinned %} pinned {% elif p.was_published_recently %} new {% endif %}" id="{{ p.id }}">
-                
-                        <td class="post_info post_id"><a href="{{ p.get_link }}" class="post_link">#{{ p.id }}</a></td>
-                        <td class="post_info post_title"><a href="{{ p.get_link }}" class="post_link">{{ p.title }}</a><br><span>{{ p.description }}</span></td>
-                        <td class="post_info post_date"><a href="{{ p.get_link }}" class="post_link">{{ p.pub_date.date }}</a></td>
-                
-                </tr>
-                {% endfor %}
-        </table>
-    </section>
+        <a href="{{ p.get_link }}" class="post {% if p.pinned %} pinned {% elif p.was_published_recently %} new {% endif %}" id="{{ p.id }}">
+            <span class="post_id">#{{ p.id }}</span>
+            <span class="post_title">{{ p.title }}</span>
+            <span class="post_date">{{ p.pub_date.date }}</span>
+        </a>
+        <line></line>    
+        {% endfor %}
+    </div>
+</section>
 
 
 {% endblock centred_content %}
