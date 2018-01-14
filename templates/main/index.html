@@ -86,7 +86,7 @@ Home
             {% endif %} {% endcomment %}
             <span class="id">#{{ p.id }}</span>
 
-            {% if p.icon_url %}
+            {% if p.icon or p.icon_url %}
                 <img src="{{ p.get_icon_thumb_url }}">
             {% endif %}
 
