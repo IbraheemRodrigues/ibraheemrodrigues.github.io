@@ -10,6 +10,7 @@ from easy_thumbnails.files import get_thumbnailer
 class Post(models.Model):
 
     id = models.IntegerField(primary_key=True)
+
     hidden = models.BooleanField(default=False)
     pinned = models.BooleanField(default=False)
 
@@ -55,6 +56,10 @@ class Post(models.Model):
     @classmethod
     def get_objects(cls, num=30, page=1):
         return cls.objects.filter(hidden=False).order_by('-pinned', '-pub_date', '-id')[num*(page-1):num*page]
+
+    @classmethod
+    def get_len(cls, num=30, page=1):
+        return len(cls.objects.filter(hidden=False).order_by('-pinned', '-pub_date', '-id'))
 
     
 

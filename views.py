@@ -17,8 +17,8 @@ def index(request):
 
 
 def posts(request):
-    num = int(request.GET.get("num", "30"))
-    page = int(request.GET.get("page", "1"))
+    num = int(request.GET.get("num", "30") or 30)
+    page = int(request.GET.get("page", "1") or 1)
     try:
         posts = Post.get_objects(num, page)
     except (ValueError, IndexError, AssertionError):
