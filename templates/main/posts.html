@@ -15,7 +15,7 @@ Posts
 {% block centred_content %}
 
 
-<section class="floating">
+<section class="floating" id="posts">
     <h1>Posts</h1>
     <line></line>
     <div id="post_list">
@@ -29,6 +29,11 @@ Posts
         <line></line>    
         {% endfor %}
     </div>
+    <span id="page-nav">
+        <a id="previous" href="?page={{page |add:-1}}" class="disabled">«</a>
+        <span id="this">{{page}}</span>
+        <a id="next" href="?page={{page |add:1}}" class="{% if page >= pages%}disabled{% endif %}">»</a>
+    </span>
 </section>
 
 

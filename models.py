@@ -4,6 +4,8 @@ from django.db import models
 from django.utils import timezone
 
 from filer.fields.image import FilerImageField
+from easy_thumbnails.files import get_thumbnailer
+
 
 class Post(models.Model):
 
@@ -36,6 +38,14 @@ class Post(models.Model):
             return self.icon.url
         except (ValueError, AttributeError):
             return self.icon_url
+
+    def get_icon_thumb_url(self):
+        try:
+            return get_thumbnailer(self.icon).get_thumbnail({ "size":( 400, 0 ) }).url
+        except (ValueError, AttributeError):
+            return self.icon_url
+
+
 
 
     def __str__(self):

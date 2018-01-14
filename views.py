@@ -17,17 +17,18 @@ def index(request):
 
 
 def posts(request):
+    num = int(request.GET.get("num", "30"))
+    page = int(request.GET.get("page", "1"))
     try:
-        posts = Post.get_objects(
-                    int(request.GET.get("num", "30")),
-                    int(request.GET.get("page", "1")),
-                )
-    except (ValueError, IndexError, ):
+        posts = Post.get_objects(num, page)
+    except (ValueError, IndexError, AssertionError):
         raise Http404
         
     template = loader.get_template('main/posts.html')
     context = {
         'posts': posts,
+        'page': page,
+        'pages': int(Post.get_len() // num)
     }
 
     return HttpResponse(template.render(context, request))
