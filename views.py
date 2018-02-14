@@ -6,7 +6,7 @@ from .models import Post, GalleryImage, Slide
 
 def index(request):
     posts = Post.get_objects()
-    slides = Slide.get_objects()
+    slides = Slide.get_objects()    
     template = loader.get_template('main/index.html')
     context = {
         'enum_posts': enumerate(posts),
@@ -19,6 +19,11 @@ def index(request):
 def posts(request):
     num = int(request.GET.get("num", "30") or 30)
     page = int(request.GET.get("page", "1") or 1)
+    pages = int(Post.get_len() // num) + 1
+
+    if page > pages:
+        raise Http404
+
     try:
         posts = Post.get_objects(num, page)
     except (ValueError, IndexError, AssertionError):
@@ -28,7 +33,7 @@ def posts(request):
     context = {
         'posts': posts,
         'page': page,
-        'pages': int(Post.get_len() // num)
+        'pages': pages
     }
 
     return HttpResponse(template.render(context, request))
@@ -51,13 +56,22 @@ def post(request, post_id):
 def gallery(request):
     num = int(request.GET.get("num", "30") or 30)
     page = int(request.GET.get("page", "1") or 1)
-    images = GalleryImage.get_objects(num, page)
+    pages = int(GalleryImage.get_len() // num) + 1
+
+    if page > pages:
+        raise Http404
+
+    try:
+        images = GalleryImage.get_objects(num, page)
+    except (ValueError, IndexError, AssertionError):
+        raise Http404
 
     template = loader.get_template('main/gallery.html')
     context = {
         'enum_images': enumerate(images),
         'page': page,
-        'pages': int(GalleryImage.get_len() // num)
+        'pages': pages
+
     }
     return HttpResponse(template.render(context, request))
 
