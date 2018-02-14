@@ -49,10 +49,15 @@ def post(request, post_id):
 
 
 def gallery(request):
-    images = GalleryImage.get_objects()
+    num = int(request.GET.get("num", "30") or 30)
+    page = int(request.GET.get("page", "1") or 1)
+    images = GalleryImage.get_objects(num, page)
+
     template = loader.get_template('main/gallery.html')
     context = {
         'enum_images': enumerate(images),
+        'page': page,
+        'pages': int(GalleryImage.get_len() // num)
     }
     return HttpResponse(template.render(context, request))
 

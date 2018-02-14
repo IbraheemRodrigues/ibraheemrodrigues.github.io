@@ -90,11 +90,12 @@ class GalleryImage(models.Model):
 
 
     @classmethod
-    def get_objects(cls, num=0):
-        objs = cls.objects.filter(hidden=False).order_by('-pub_date')
-        if num:
-            objs = objs[:num]
-        return objs
+    def get_objects(cls, num=30, page=1):
+        return cls.objects.filter(hidden=False).order_by('-pub_date')[num*(page-1):num*page]
+
+    @classmethod
+    def get_len(cls, num=30, page=1):
+        return len(cls.objects.filter(hidden=False).order_by( '-pub_date', '-id'))
 
 
 class Slide(models.Model):

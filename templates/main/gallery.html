@@ -78,5 +78,11 @@ Gallery
         cardResize();
 
     </script>
+
 </section>
+<span id="page-nav" class="floating">
+    <a id="previous" href="?page={{page |add:-1}}" class="{% if page <= 1 %}disabled{% endif %}">«</a>
+    <span id="this">Page {{page}}</span>
+    <a id="next" href="?page={{page |add:1}}" class="{% if page >= pages%}disabled{% endif %}">»</a>
+</span>
 {% endblock centred_content %}
