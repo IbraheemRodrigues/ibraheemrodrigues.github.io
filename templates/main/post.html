@@ -8,6 +8,8 @@
 {% block viewname %}posts{% endblock viewname %}
 
 {% block head %}
+<meta name="description" content="{{ post.description }}">
+
 <link rel="stylesheet" href="{% static 'main/css/post.css' %}">
 
 <style>
