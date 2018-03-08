@@ -8,8 +8,11 @@ function set_slide(target_slide) {
 
     var slide_id = slide_ids[current_slide];
 
-    $('.slide').removeClass('show')
-    $(`.slide#${slide_id}`).addClass('show')
+    $('.slide').removeClass('show');
+    $(`#${slide_id}.slide`).addClass('show');
+
+    $('button.info').removeClass('this');
+    $(`button#${slide_id}.info`).addClass('this');
 }
 
 function slide_loop() {
@@ -35,8 +38,8 @@ function reset_loop(num) {
 $(document).ready(function(){
 
     //generate buttons
-    for (id in slide_ids) {
-        $('#button-container').append(`<button class=\'info frosted hoverable\' id=\'${id}\' onclick=\'reset_loop(${id});\'></button>`);
+    for (i = 0; i < slide_ids.length; i++) {
+        $('#button-container').append(`<button class=\'info frosted hoverable\' id=\'${slide_ids[i]}\' onclick=\'reset_loop(${slide_ids[i]});\'></button>`);
     }
 
     reset_loop();
