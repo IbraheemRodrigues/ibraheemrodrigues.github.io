@@ -353,11 +353,12 @@ nav .nav-link#home { padding: 5px; width: 100%; height: auto; }
 /*
 * Post Viewer
 */
-.post-viewer .post-view { display: grid; grid-template-columns: 1fr 3fr; grid-gap: 10px; grid-template-areas: "top   top" "quote quote"; }
+.post-viewer .post-view { display: grid; grid-template-columns: 1fr 3fr; grid-gap: 10px; grid-template-areas: "top   top" "quote quote"; position: relative; }
 .post-viewer .post-view.cat-project { grid-template-areas: "top   top" "img quote"; }
+@media screen and (max-width: 42em) { .post-viewer .post-view.cat-project { grid-template-areas: "top     top" "img     img" "quote quote"; } }
 .post-viewer .post-view .header { grid-area: top; }
 .post-viewer .post-view .header .title { color: #11bbff; font-size: 1.5rem; }
 .post-viewer .post-view:hover .header .title { text-decoration: underline; }
 .post-viewer .post-view .description { font-style: italic; }
-.post-viewer .post-view blockquote.preview { margin: 0; grid-area: quote; }
+.post-viewer .post-view blockquote.preview { margin: 0; max-height: 100%; overflow: hidden; grid-area: quote; position: relative; }
 .post-viewer .post-view .coverimg { width: 100%; height: auto; grid-area: img; }

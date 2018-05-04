@@ -110,7 +110,7 @@ nav {
   "reddit"
   "credits"
   "repo";
-
+  
   .right {
     text-align: right;
   }
@@ -158,10 +158,19 @@ nav {
     "top   top"
     "quote quote";
 
+    position: relative;
+
     &.cat-project {
       grid-template-areas: 
       "top   top"
       "img quote";
+
+      @include small {
+        grid-template-areas: 
+        "top     top"
+        "img     img"
+        "quote quote";
+      }
     }
   
     .header {
@@ -183,7 +192,11 @@ nav {
   
     blockquote.preview {
       margin: 0;
+      max-height: 100%;
+      overflow: hidden;
       grid-area: quote;
+
+      position: relative;
     }
   
     .coverimg {
