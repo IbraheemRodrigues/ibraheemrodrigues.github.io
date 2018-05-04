@@ -1,0 +1,22 @@
+{% assign category = {{ include.category | default: site.categories[page.navtype]}} %}
+<div class="post-viewer">
+  {% for post in category %}
+  <a class="post-view jeg cat-{{ post.categories }} nostyle" href="{{ post.url | absolute_url }}">
+      <span class="header">
+        {{ post.date | date_to_string }} |
+        <span class="title">{{ post.title }}</span> 
+        {% if post.description %} |
+          <span class="description">{{ post.description }}</span>
+        {% endif %}
+      </span>
+
+      <blockquote class="preview">{{ post.content | truncatewords: 50 }}</blockquote>
+
+      {% if post.coverimg %}
+      <img class="coverimg" src="{{ post.coverimg }}" alt="">
+      {% endif %}
+
+
+  </a>
+  {% endfor %}
+</div>
