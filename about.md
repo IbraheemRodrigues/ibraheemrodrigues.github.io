@@ -27,14 +27,14 @@ Check out [PAKit](https://pakit.cf), my modding tool for [Starbound](https://pla
 - NodeJS for ½ a year
   - Electron - [PAKit](https://pakit.cf) ([repo](https://github.com/IbraheemR/PAKit))
 - Lua here and there for 3 years 
-  - Starbound API - [OBAN's Transmutation Mod](oban_transmutation_mod), a mod for [Starbound](https://playstarbound.com/) (WIP)
+  - Starbound API - [OBAN's Transmutation Mod]() ([v2](https://github.com/IbraheemR/oban_transumutation_mod) WIP), a mod for [Starbound](https://playstarbound.com/)
   - Corona SDK - [sLide](https://github.com/IbraheemR/sLide), a smartphone game
 - Git for 2-3 Years
 
 - Bits and Bobs
   - Java, Unity, Godot
   - Blender
-  - Illistrator/Photoshop/Premier Pro
+  - Illustrator/Photoshop/Premier Pro
 
 ## School stuff
 
