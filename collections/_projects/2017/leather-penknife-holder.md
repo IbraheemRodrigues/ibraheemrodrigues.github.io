@@ -1,12 +1,10 @@
 ---
 title: Leather Penknife Holder
-description: An experiment in wetforming leather
 
 navtype: project
-permalink: projects/leather-penknife-holder/
 
-date: 2017-09-07 -
-categories: project
+pubdate: 2017-09-07 -
+categories: all project
 
 coverimg: https://lh3.googleusercontent.com/2dGYVPPgY-IJefGVrMN3fWVxpPWZOZ25U7w2jt8Kc4Ykw2lQUw12HZqJaiNo_c2HDUtAZd2K8F_yQbzTq4HYUjrZnhL00Q-3qbt648WprAKfYhsGdOYyECSOfvx2sI5_pxgzU57hHw
 ---

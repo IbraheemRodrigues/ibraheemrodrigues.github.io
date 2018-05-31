@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
 
-{% seo %}
+    {% seo %}
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
 
@@ -21,7 +21,7 @@
     </section>
 
     <section class="main-content">
-      {% if page.date %} <span class="page-date">{{ page.date | date_to_string }}</span> {% endif %}
+      {% if page.pubdate %} <span class="page-date">{{ page.pubdate | date_to_string }}</span> {% endif %}
       <div class="main-highlight">
         {{ content }}
       </div>

@@ -4,7 +4,13 @@ layout: default
 title: Projects
 description: Substantial things I've made
 
+permalink: /projects/
+
 navtype: project
 ---
 
-{% include post_viewer.html %}
+{% include post_viewer.html num=20 posts=site.projects %}
+
+</div>
+<div class="main-highlight"> {% comment %} Spoof a new section {% endcomment %}
+{% include more_projects.html %}

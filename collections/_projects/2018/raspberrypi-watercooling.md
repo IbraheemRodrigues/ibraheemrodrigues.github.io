@@ -2,14 +2,13 @@
 title: RaspberryPi Watercooling
 
 navtype: project
-permalink: projects/raspberrypi-watercooling/
 
-date: 2018-03-08 -
-categories: project
+pubdate: 2018-03-08 -
+categories: all project
 
 coverimg: https://lh3.googleusercontent.com/vQuScKIoeMcDKLUnT9c_Y3c71DWKSuHLFTc5NFEG9hweYeJAno-9aGQHBgbIgSq1AGGtCcBzEoBk5swri2UksPgRiPh3UD4cyYC5wAyzeoixwCQCXUGJWlm9H4Z4cbx-0sXTlpOBVA
 ---
-I've had this idea for a while now, but I finally got round to executing it. 
+I've had this idea for a while now, but I finally got round to executing it.
 The core of this is the water cooling block, which is made from three layers; a base of aluminium, a second hollow plastic one and a third plastic layer with holes for water to flow in and out. I ended up using the sheathing from some earthing wire to create the segment which the longer tube attached to, and then applied copious amounts of CA glue to bond all the parts together, before letting it set for half an hour or so. I had initially added a small piece in the middle of the cavity, which I had thought would improve water flow round the edges, but bubble ended up collecting around it so removed it to find my worries were not true. The whole cooler, however was a little oversize, but I was able to fit it by mounting at an angle.
 
 <img class="post-image" src="https://lh3.googleusercontent.com/vQuScKIoeMcDKLUnT9c_Y3c71DWKSuHLFTc5NFEG9hweYeJAno-9aGQHBgbIgSq1AGGtCcBzEoBk5swri2UksPgRiPh3UD4cyYC5wAyzeoixwCQCXUGJWlm9H4Z4cbx-0sXTlpOBVA">

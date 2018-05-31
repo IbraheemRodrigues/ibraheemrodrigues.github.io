@@ -1,3 +1,31 @@
 theme: jekyll-theme-cayman
 title: Ibraheem Rodrigues
-description: Adventures of me myself & I, through time & space
+description: Adventures through time & space
+
+soverflow_url: https://stackoverflow.com/users/8077162/ibraheem-rodrigues
+soverflow_username: Ibraheem-Rodrigues
+reddit_username: OBANx
+
+collections_dir: collections
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:path/
+    template: default
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: default
+      show_in_index: true
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: default
+      show_in_index: true
+
+plugins:
+  - jekyll-redirect-from

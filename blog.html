@@ -1,10 +1,17 @@
 ---
 layout: default
 
-title: The Blog
+title: Blog
 description: Adventures through time and space
+
+permalink: /blog/
+redirect_from: /post/
 
 navtype: blog
 ---
 
-{% include post_viewer.html %}
+{% include post_viewer.html num=30 posts=site.posts %}
+
+</div>
+<div class="main-highlight"> {% comment %} Spoof a new section {% endcomment %}  
+{% include more_blog.html %}

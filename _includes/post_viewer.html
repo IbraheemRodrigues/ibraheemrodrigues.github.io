@@ -1,9 +1,13 @@
-{% assign category = {{ include.category | default: site.categories[page.navtype]}} %}
+
+{% assign posts = include.posts | where: "show_in_index", true | sort: "pubdate" | reverse | slice: 0, include.num %}
+
+
 <div class="post-viewer">
-  {% for post in category %}
-  <a class="post-view jeg cat-{{ post.categories }} nostyle" href="{{ post.url | absolute_url }}">
+  {% for post in posts %}
+
+    <a class="post-view nostyle {% if post.coverimg %}has-img{% endif %}" href="{{ post.url | absolute_url }}">
       <span class="header">
-        {{ post.date | date_to_string }} |
+        {{ post.pubdate | date_to_string }} |
         <span class="title">{{ post.title }}</span> 
         {% if post.description %} |
           <span class="description">{{ post.description }}</span>
@@ -17,6 +21,6 @@
       {% endif %}
 
 
-  </a>
+    </a>
   {% endfor %}
 </div>
