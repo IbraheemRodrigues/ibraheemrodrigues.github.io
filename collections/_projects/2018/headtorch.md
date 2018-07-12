@@ -5,6 +5,8 @@ description: You can't beat that homebrew shine!
 navtype: project
 
 pubdate: 2018-06-23 -
+
+coverimg: /projects/2018/headtorch/img_7020.jpg
 ---
 With my DofE silver practice expedition coming up I found myself firstly without a torch, and secondly wanting to out shine anyone who gazed apon me at night, interrogation style (or atleast avoid being interrogated myself). Having seen the helpful [video](https://youtu.be/kl1UPoYSAow) by DIY Perks on YouTube what seems like not too long ago (but is actually over 2 years), I set out to build my own, and suceeded in creating a mini sun that blinded anyone who came too close.
 
