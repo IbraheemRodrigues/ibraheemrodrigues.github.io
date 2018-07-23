@@ -12,7 +12,7 @@ With my DofE silver practice expedition coming up I found myself firstly without
 
 I began this project a while ago, planning to use the body and battery from an old otascope, using the dimmmer machnism to do the same for the torch. The specs looked good, the super efficient LED's I had consumed less power than the old original LED in the unit. I had intended to 3D print an adapter part from the screw thread to my LED, and thereby preserve ther handle/battery unit, hawever I did'nt endup getting round to it and had issues with the old batteries.
 
-The days went on and I had forgotten about the project. In that time I had founded [BEM7](http://bem7.tk), and begun delving into the world of batteries as part as my work on the [RodSinski Electric Go Kart project](http://kart.bem7.tk). I had made a battery (the first of the BEM7 'd2' recycled batteries) from four identical old phone batteries I had collected, and as DofE crept to only being a week away I decided to put it to use, and make a head torch.
+The days went on and I had forgotten about the project. In that time I had founded [BEM7](https://bem7.tk), and begun delving into the world of batteries as part as my work on the [RodSinski Electric Go Kart project](https://kart.bem7.tk). I had made a battery (the first of the BEM7 'd2' recycled batteries) from four identical old phone batteries I had collected, and as DofE crept to only being a week away I decided to put it to use, and make a head torch.
 
 <img class="post-image" src="img_6969.jpg">
 <img class="post-image" src="img_6985.jpg">

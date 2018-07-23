@@ -7,7 +7,7 @@ navtype: about
 
 Based in London, I've been intrigued by coding, making and electronics ever since my first experiences with a Raspberry Pi at age 9, I've . I mainly work in Python, but also use JavaScript quite a bit. I've also done some work in Godot and Django. I've built this website with Jekyll to document the projects I've been working on.
 
-Director of [BEM7](http://bem7.tk), a spoof company me and my friends run.
+Director of [BEM7](https://bem7.tk), a spoof company me and my friends run.
 
 Check out [PAKit](https://pakit.cf), my modding tool for [Starbound](https://playstarbound.com/)!
 
@@ -22,7 +22,7 @@ Check out [PAKit](https://pakit.cf), my modding tool for [Starbound](https://pla
   - GPIO/RPi Stuff
   - Discord API - [Scrub Bot](https://github.com/IbraheemR/scrub-bot)
 - HTML/CSS/JS for 4 years
-  - Web design - [BEM7.tk](http://bem7.tk) ([repo](https://github.com/IbraheemR/bem7.tk)
+  - Web design - [BEM7.tk](https://bem7.tk) ([repo](https://github.com/IbraheemR/bem7.tk)
   - p5.js - [Captain-5ever](https://github.com/IbraheemR/captain-5ever) (Play it [here](https://ibraheemr.github.io/captain-5ever)), a recreation of [Captain Forever](http://www.captainforever.com/captainforever.php)
   - matter.js - [Captain-5ever](https://github.com/IbraheemR/captain-5ever)
 - NodeJS for ½ a year
