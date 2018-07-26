@@ -8,10 +8,16 @@ reddit_username: OBANx
 
 collections_dir: collections
 collections:
+  posts: 
+    output: true
+    permalink: /blog/:title/
+    template: default
+
   projects:
     output: true
     permalink: /:collection/:path/
     template: default
+
 
 defaults:
   - scope:

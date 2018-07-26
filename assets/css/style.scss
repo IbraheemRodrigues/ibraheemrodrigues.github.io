@@ -28,6 +28,10 @@ a.nostyle, a.nostyle:hover, a.nostyle:visited {
   text-decoration: none;
 }
 
+p {
+  text-align: justify;
+}
+
 .page-header {
   padding-bottom: 0;
   box-shadow: $shadow;
@@ -196,6 +200,8 @@ nav {
       max-height: 100%;
       overflow: hidden;
       grid-area: quote;
+
+      text-align: justify;
 
       position: relative;
     }
