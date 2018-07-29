@@ -14,7 +14,7 @@
         {% endif %}
       </span>
 
-      <blockquote class="preview">{{ post.content | truncatewords: 40}}</blockquote>
+      <blockquote class="preview">{{ post.content | truncatewords: 40 | strip_html }}</blockquote>
 
       {% if post.coverimg %}
       <img class="coverimg" src="{{ post.coverimg }}" alt="">
