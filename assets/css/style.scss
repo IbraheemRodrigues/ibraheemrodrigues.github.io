@@ -55,6 +55,14 @@ i.clip-icon {
   background-size: 100% 100%;
 }
 
+.fleft {
+  float: left;
+}
+
+.fright {
+  float: right;
+}
+
 nav {
   display: grid;
   grid-template-columns: 3rem 1fr 1fr 1fr;
@@ -95,8 +103,14 @@ nav {
   font-weight: bold;
 }
 
-.post-image {
+.half-image {
   width: 49%;
+
+  display: inline-block;
+
+  @include small {
+    width: 100%;
+  }
 }
 
 .highlight, thead, tbody {
