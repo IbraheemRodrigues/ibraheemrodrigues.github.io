@@ -35,7 +35,7 @@ Check out [PAKit](https://pakit.cf), my modding tool for [Starbound](https://pla
 
 - Bits and Bobs
   - Java, Unity, Godot
-  - Blender
+  - Blender - [A wave animation I made](https://youtu.be/-v1MYRG6mrg)
   - Illustrator/Photoshop/Premier Pro
 
 <!-- ## School stuff
