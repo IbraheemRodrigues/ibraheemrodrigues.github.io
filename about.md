@@ -11,9 +11,9 @@ Director of [BEM7](https://bem7.tk), a spoof company me and my friends run.
 
 Check out [PAKit](https://pakit.cf), my modding tool for [Starbound](https://playstarbound.com/)!
 
-## My experience in various things
+## My skills and showcase works
 
-- Engineering-type things for 4 years - see my [projects](/projects).
+- Engineering/Making for 4 years - see my [projects](/projects).
 - Electronics on and off for 5 years
 
 - Python for 6 years (Django, Tkinter, GPIO stuff)
@@ -23,21 +23,22 @@ Check out [PAKit](https://pakit.cf), my modding tool for [Starbound](https://pla
   - Discord API - [Scrub Bot](https://github.com/IbraheemR/scrub-bot)
 - HTML/CSS/JS for 4 years
   - Web design - [BEM7.tk](https://bem7.tk) ([repo](https://github.com/IbraheemR/bem7.tk)
-  - p5.js - [Captain-5ever](https://github.com/IbraheemR/captain-5ever) (Play it [here](https://ibraheemr.github.io/captain-5ever)), a recreation of [Captain Forever](http://www.captainforever.com/captainforever.php)
+  - p5.js - [OneShot](https://repl.it/talk/challenge/One-Shot/5329) (Play it [here](https://oneshot--ibraheemrodrigues.repl.co/)), a online multiplayer space shooter
   - matter.js - [Captain-5ever](https://github.com/IbraheemR/captain-5ever)
-- NodeJS for ½ a year
+- NodeJS for a year
   - Electron - [PAKit](https://pakit.cf) ([repo](https://github.com/IbraheemR/PAKit))
+  - Socket.io - [OneShot](https://repl.it/talk/challenge/One-Shot/5329) (Play it [here](https://oneshot--ibraheemrodrigues.repl.co/)), a online multiplayer space shooter
 - Lua here and there for 3 years
   - Starbound API - [OBAN's Transmutation Mod](https://steamcommunity.com/sharedfiles/filedetails/?id=754336641) ([v2](https://github.com/IbraheemR/oban_transumutation_mod) WIP), a mod for [Starbound](https://playstarbound.com/)
   - Corona SDK - [sLide](https://github.com/IbraheemR/sLide), a smartphone game
-- Git for 2-3 Years
+- Git for 3 Years - See my [GitHub]({{ site.github.owner_url }})
 
 - Bits and Bobs
   - Java, Unity, Godot
   - Blender
   - Illustrator/Photoshop/Premier Pro
 
-## School stuff
+<!-- ## School stuff
 
 - GCSE Design and Technology - Resistant Materials
-- GCSE Computer Science
+- GCSE Computer Science -->
