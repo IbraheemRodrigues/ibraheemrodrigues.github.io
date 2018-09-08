@@ -128,7 +128,7 @@ nav {
   "soverflow"
   "reddit"
   "credits"
-  "repo";
+  "feed";
   
   .right {
     text-align: right;
@@ -139,6 +139,9 @@ nav {
   }
   #credits {
     grid-area: credits;
+  }
+  #feed {
+    grid-area: feed;
   }
 
   #github {
@@ -156,7 +159,7 @@ nav {
     grid-template-areas: 
     "owner      github"
     "credits soverflow"
-    "repo       reddit";
+    "feed       reddit";
   }
 }
 
