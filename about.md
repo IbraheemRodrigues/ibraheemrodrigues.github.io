@@ -5,7 +5,7 @@ navtype: about
 
 # Hi! I'm Ibraheem Rodrigues, aka OBAN
 
-Based in London, I've been intrigued by coding, making and electronics ever since my first experiences with a Raspberry Pi at age 9, I've . I mainly work in Python, but also use JavaScript quite a bit. I've also done some work in Godot and Django. I've built this website with Jekyll to document the projects I've been working on.
+Based in London, I've been intrigued by coding, making and electronics ever since my first experiences with a Raspberry Pi at age 9. I mainly work in Python, but also use JavaScript quite a bit. I've also done some work in Godot and Django. I've built this website with Jekyll to document the projects I've been working on.
 
 Director of [BEM7](https://bem7.tk), a spoof company me and my friends run.
 
