@@ -1,0 +1,22 @@
+---
+title: Projects Archive - 2017 & 2018
+description: Substantial things I've made
+
+permalink: /projects/2018/
+redirect_from: 
+  - /projects/2017/
+
+navtype: project
+show_in_index: false
+---
+
+{% assign y2017 = site.projects | group_by_exp: "p", "p.pubdate | date: '%Y'" | where: "name", "2017" %}
+{% assign y2018 = site.projects | group_by_exp: "p", "p.pubdate | date: '%Y'" | where: "name", "2018" %}
+
+{% assign thisYear = y2017[0].items |concat: y2018[0].items %}
+
+{% include post_viewer.html num=100 posts=thisYear %}
+
+</div>
+<div class="main-highlight"> {% comment %} Spoof a new section {% endcomment %}
+{% include more_projects.html %}

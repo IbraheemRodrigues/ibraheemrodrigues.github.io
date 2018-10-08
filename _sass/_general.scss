@@ -1,0 +1,73 @@
+body {
+  background-image: url("/assets/img/ignasi_pattern_s.png") /* www.toptal.com */; 
+
+}
+
+a.nostyle, a.nostyle:hover, a.nostyle:visited {
+  color: $body-text-color;
+  text-decoration: none;
+}
+
+p {
+  text-align: justify;
+}
+
+.page-header {
+  padding-bottom: 0;
+  box-shadow: $shadow;
+  z-index: 100;
+
+  // ONly applicable if background_img set in YAML
+  background-size: 100% auto; 
+  background-position: center;
+  
+  h1.project-name, h2.project-tagline {
+    text-shadow: 0 2px 6px #0007, 0 2px 6px #0007;
+  }
+}
+
+i.clip-icon {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+
+  background-image: url("/assets/img/logo-clip.svg");
+  background-size: 100% 100%;
+}
+
+.fleft {
+  float: left;
+}
+
+.fright {
+  float: right;
+}
+
+.main-highlight {
+  margin-bottom: 1rem;
+  padding: 1rem;
+
+  background-color: $code-bg-color;
+  box-shadow: $shadow;
+}
+
+.page-date {
+  display: block;
+  text-align: right;
+  font-weight: bold;
+}
+
+.half-image {
+  width: 49%;
+
+  display: inline-block;
+
+  @include small {
+    width: 100%;
+  }
+}
+
+.highlight, thead, tbody {
+  background-color: $code-bg-color;
+  box-shadow: $shadow;
+}

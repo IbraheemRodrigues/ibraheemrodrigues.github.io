@@ -1,0 +1,25 @@
+nav {
+  display: grid;
+  grid-template-columns: 3rem 1fr 1fr 1fr;
+
+  .nav-link {
+    margin-bottom: 3px;
+    padding: 10px;
+    color:  white;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    &.selected, &:hover {
+      margin-bottom: 0;
+      border-bottom: 3px solid white
+    }
+
+    &#home {
+      padding: 5px;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
