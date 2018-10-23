@@ -2,9 +2,7 @@
 title: Leather Penknife Holder
 
 navtype: project
-
 pubdate: 2017-09-07 -
-
 coverimg: /projects/2017/leather-penknife-holder/img_4645.jpg
 ---
 Ever since seeing it done on the Make: channel around 5 years ago, I've been intrigued by wet forming leather. I've tried once or twice before, but to no avail, undoubtedly down to the poor quality furniture leather I attempted to use. Recently, I happened to get a small leather offcut of quite significant thickness and quality, so I decided to revisit this project, to make a belt mounted holster for my penknife.

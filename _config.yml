@@ -6,7 +6,7 @@ soverflow_url: https://stackoverflow.com/users/8077162/ibraheem-rodrigues
 soverflow_username: Ibraheem-Rodrigues
 reddit_username: OBANx
 
-collections_dir: collections
+collections_dir: _collections
 collections:
   posts: 
     output: true
