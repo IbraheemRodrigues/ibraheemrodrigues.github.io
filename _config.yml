@@ -1,6 +1,14 @@
 theme: jekyll-theme-cayman
 title: Ibraheem Rodrigues
 description: Adventures through time & space. My blog and projects around coding and making.
+lang: en_US
+
+logo: /assets/img/logo-clip.png #TODO: Replace this with full circle logo
+social:
+  - https://stackoverflow.com/users/8077162/ibraheem-rodrigues
+  - https://reddit.com/u/OBANx
+  - https://github.com/IbraheemR
+  - https://www.youtube.com/channel/UCKe4t2irPeZfM4w_Hf7X1NA?view_as=subscriber
 
 soverflow_url: https://stackoverflow.com/users/8077162/ibraheem-rodrigues
 soverflow_username: Ibraheem-Rodrigues
