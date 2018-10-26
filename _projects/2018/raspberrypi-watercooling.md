@@ -1,7 +1,6 @@
 ---
 title: RaspberryPi Watercooling
 
-navtype: project
 pubdate: 2018-03-08 -
 coverimg: /projects/2018/raspberrypi-watercooling/img_6792.jpg
 ---

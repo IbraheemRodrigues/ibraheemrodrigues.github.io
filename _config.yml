@@ -14,7 +14,6 @@ soverflow_url: https://stackoverflow.com/users/8077162/ibraheem-rodrigues
 soverflow_username: Ibraheem-Rodrigues
 reddit_username: OBANx
 
-collections_dir: _collections
 collections:
   posts: 
     output: true
@@ -33,12 +32,14 @@ defaults:
       type: posts
     values:
       layout: default
+      navtype: blog
       show_in_index: true
   - scope:
       path: ""
       type: projects
     values:
       layout: default
+      navtype: project
       show_in_index: true
 
 plugins:

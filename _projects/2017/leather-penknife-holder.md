@@ -1,7 +1,6 @@
 ---
 title: Leather Penknife Holder
 
-navtype: project
 pubdate: 2017-09-07 -
 coverimg: /projects/2017/leather-penknife-holder/img_4645.jpg
 ---
