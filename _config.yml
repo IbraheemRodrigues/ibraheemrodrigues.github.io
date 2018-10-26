@@ -12,13 +12,13 @@ social:
   - https://www.codewars.com/users/IbraheemR
 
 soverflow_url: https://stackoverflow.com/users/8077162/ibraheem-rodrigues
-soverflow_username: Ibraheem-Rodrigues
+soverflow_username: Ibraheem-Rodrigu
 reddit_username: OBANx
 
 collections:
   posts: 
     output: true
-    permalink: /blog/:title/
+    permalink: /blog/:year/:title/
     template: default
 
   projects:
