@@ -2,7 +2,7 @@
   {%- for thing in include.set -%}
     <a href="{{ thing.url }}" class="card nostyle">
 
-      <img src="{{ thing.image | absolute_url }}" alt="" />
+      <img src="{{ thing.image }}" alt="" />
 
       <span class="title">{{ thing.title }}</span>
       <span class="description">{{ thing.description | default: thing.excerpt | strip_html | truncatewords: 25, '...' }}</span>
