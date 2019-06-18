@@ -1,0 +1,66 @@
+@import "vars";
+
+.cardset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  max-width: 16rem * 6;
+  margin: 0 auto;
+}
+
+.card {
+  width: 15rem;
+  height: 20rem;
+
+  margin: 0.5rem;
+  padding: 0.5rem;
+
+  display: block;
+
+  position: relative;
+
+  --gel-color: #ff000033;
+  --border-color: #ff0000;
+
+  background-color: var(--gel-color);
+
+  border: $border-width solid var(--border-color);
+
+  &::before,
+  &::after {
+    display: none;
+  }
+
+  &:hover {
+    text-shadow: $pop-shadow;
+    box-shadow: 0 0 1rem var(--border-color);
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: -1;
+
+    width: 100%;
+    height: 12rem;
+
+    object-fit: cover;
+    filter: brightness(0.7);
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 12rem;
+
+    font-family: $title-font;
+    font-size: 2rem;
+    text-align: center;
+  }
+}

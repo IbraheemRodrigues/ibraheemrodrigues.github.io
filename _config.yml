@@ -1,48 +1,38 @@
-theme: jekyll-theme-cayman
 title: Ibraheem Rodrigues
-description: Adventures through time & space. My blog and projects around coding and making.
+description: Programmer and Maker
+url: ibraheemrodrigues.com
+author: Ibraheem Rodrigues
+
+logo: TODO
+
 lang: en_US
 
-logo: /assets/img/logo-clip.png #TODO: Replace this with full circle logo
 social:
-  - https://stackoverflow.com/users/8077162/ibraheem-rodrigues
-  - https://reddit.com/u/OBANx
-  - https://github.com/IbraheemR
-  - https://www.youtube.com/channel/UCKe4t2irPeZfM4w_Hf7X1NA
-  - https://www.codewars.com/users/IbraheemR
-
-soverflow_url: https://stackoverflow.com/users/8077162/ibraheem-rodrigues
-soverflow_username: Ibraheem-Rodrigues
-reddit_username: OBANx
+  links:
+    # - https://stackoverflow.com/users/8077162/ibraheem-rodrigues
+    # - https://reddit.com/u/OBANx
+    - https://github.com/IbraheemR
+    - https://www.youtube.com/channel/UCKe4t2irPeZfM4w_Hf7X1NA
+    # - https://www.codewars.com/users/IbraheemR
 
 collections:
-  posts: 
-    output: true
-    permalink: /blog/:year/:title/
-    template: default
-
   projects:
     output: true
-    permalink: /:collection/:path/
-    template: default
-
+    permalink: /p/:year/:title/
 
 defaults:
   - scope:
       path: ""
-      type: posts
     values:
-      layout: default
-      navtype: blog
-      show_in_index: true
+      draft: false
   - scope:
       path: ""
-      type: projects
+      type: "projects"
     values:
       layout: default
-      navtype: project
-      show_in_index: true
 
 plugins:
   - jekyll-redirect-from
-  - jekyll-feed
+  - jekyll-mentions
+  - jekyll-seo-tag
+  - jekyll-sitemap

@@ -1,18 +1,21 @@
 ---
 title: OneShot - Devlog Day 1 & 2
-description: repl.it Multiplayer Games Competition 
 
-pubdate: 2018-07-26 -
+date: 2018-07-26 -
+image: /assets/p/2018/oneshot/oneshot-radar.png
 ---
-Now that my summer holiday has started, it was time to look for some new projects to embark on. In the weekly repl.it newsletter, I saw they were hosting a multiplayer games competition. Being fairly confident in making games in JS using [p5.js](https://p5js.org) for rendering, (see [Captain 5ever](/captain-5ever) my unfinished remake of the amazing [Captain Forever](http://www.captainforever.com/captainforever.php)) I thought I would give it a go. And to make it multiplayer, I turned to an express/socket.io node.js server, following [this tutorial](https://youtu.be/bjULmG8fqc8) by Dan Shiffman. The infrastructure repl.it have setup to allow users to host small server side programs - and across so many languages - truly amazes me.
+
+Now that my summer holiday has started, it was time to look for some new projects to embark on.
+
+In the weekly repl.it newsletter, I saw they were hosting a multiplayer games competition. Being fairly confident in making games in JS using [p5.js](https://p5js.org) for rendering, (see [Captain 5ever](/captain-5ever) my unfinished remake of the amazing [Captain Forever](http://www.captainforever.com/captainforever.php)) I thought I would give it a go. And to make it multiplayer, I turned to an express/socket.io node.js server, following [this tutorial](https://youtu.be/bjULmG8fqc8) by Dan Shiffman. The infrastructure repl.it have setup to allow users to host small server side programs - and across so many languages - truly amazes me.
 
 I would have liked to have used Git to track my changes day by day, however since the game had to be created on the site, I was not able to do this. I started out with some small scale tests making a chat room style server (find it [here](https://TestChat--ibraheemrodrigues.repl.co) and the project [here](https://repl.it/@IbraheemRodrigues/TestChat)). In all honesty, it's not that dissimilar from the ipcMessenger and ipcRender used in Electron apps. Having done this I felt I was up to speed with sockets, and so began the development of my game.
 
 The game was to be called 'OneShot' and the concept was as follows: players are in an arena, with one life, one shot and the aim of surviving as long as possible. The architecture I had figured out in my head had the following components:
 
-| Server   | Coordinates entity information & relays this information between clients |
+| Server | Coordinates entity information & relays this information between clients |
 | Renderer | The main portion of the client side code, which handles rendering the data received from the server |
-| Sprites  | Part of the renderer, these will be functions which take in entity data an execute the required p5 commands to draw things |
+| Sprites | Part of the renderer, these will be functions which take in entity data an execute the required p5 commands to draw things |
 | Player Controller | Part of the client, reads in key presses, handles player physics and relays this information to the sever to be distribute to other clients |
 | Shot Controller | Part of the server, this controls the physics and collision checking for the players shots |
 
@@ -21,10 +24,10 @@ I first setup a simple express server to serve the files, and the created the re
 I then setup some UI elements. An info panel in the top left shows the vessel id, ship name (more on that below) as well as the X & Y coordinates and lifetime, i.e the score. In the top right a 'Radar' shows the number of other players in game, and a scoreboard of the current top 5 lifetimes.
 I also added a communications readout in the bottom left and a controls diagram ('Flight Guide') in the borrow right.
 
-![](/assets/img/2018/oneshot/oneshot-ui.png)
+![](/assets/p/2018/oneshot/oneshot-ui.png)
 
-As for naming, I thought it would be fun to base ship names off the ship's id (which was just the id of the client's socket connection). After about half an hour of playing with a random word generator I had come up with a system where by the fist three digits formed the name. For example:  
-  
+As for naming, I thought it would be fun to base ship names off the ship's id (which was just the id of the client's socket connection). After about half an hour of playing with a random word generator I had come up with a system where by the fist three digits formed the name. For example:
+
 `karT8MQaqcFeN-eiAAGa` => `kar` => **K**ing **A**lpaca **R**estrainer  
 `lbbwcnERTdt62auMAAGi` => `lbb` => **L**ieutanant **B**ig Boy the **B**agpiper
 
@@ -33,4 +36,4 @@ That's just about it for what I've got done on these first couple of days. I'd s
 - The comms UI element has a glitch were the previous message is retyped before it shows a new message
 - Some sound will make the game a whole lot more exciting, I've begun designing some with [Bfxr](https://www.bfxr.net/)
 - Gameplay becomes boring once you have used your shot. Recharge powerups would be the best way to fix this, as the user still will cling on to hope of being able to play again.
-- Arrows that point to  off screen ships, in a circle around the player would make gameplay easier an encourage more action.
+- Arrows that point to off screen ships, in a circle around the player would make gameplay easier an encourage more action.

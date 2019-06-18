@@ -1,80 +1,49 @@
---- 
-layout: default 
-title: Ibraheem Rodrigues 
-description: Adventures through time and space 
-navtype: main 
 ---
+redirect_from:
+  - /p
+  - /p/2017
+  - /p/2018
+  - /p/2019
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<style>
-  #work-grid {
-    display: grid;
-    display: -ms-grid;
+    {% seo %}
 
-    gap: 10px;
-    align-items: center;
+    <link rel="stylesheet" href="{{ '/assets/css/index.css?v=' | append: site.github.build_revision | relative_url }}" />
+    <script defer src="{{ '/assets/js/gel.js?v=' | append: site.github.build_revision | relative_url }}"></script>
 
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    "pakit-text pakit-image"
-    "headtorch-image headtorch-text"
-    "oneshot-text oneshot-image";
-  }
+    <!-- Squares Stuff -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
+    <script defer src="{{ '/assets/js/squares.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+  </head>
+  <body>
+    <section id="hero">
+      <div id="sq-canvas"></div>
+      <h1>
+          {{ site.title }}
+        <span class="small">{{ site.description }}</span>
+      </h1>
+      <div id="icons">
+        <a href="http://github.com/ibraheemr" id="github" class="nostyle">
+          <img src="/assets/img/octicons/mark-github.svg" alt="GitHub">
+        </a>
+        <a href="mailto://contact@ibraheemrodrigues.com" id="email" class="nostyle">
+          <img src="/assets/img/octicons/mail-read.svg" alt="Email">
+        </a>
+      </div>
+    </section>
 
-  #work-grid #pakit-image{
-    grid-area: pakit-image;
-  }
-  #work-grid #pakit-text{
-    grid-area: pakit-text;
-  }
-  #work-grid #headtorch-image{
-    grid-area: headtorch-image;
-  }
-  #work-grid #headtorch-text{
-    grid-area: headtorch-text;
-  }
-  #work-grid #oneshot-image{
-    grid-area: oneshot-image;
-  }
-  #work-grid #oneshot-text{
-    grid-area: oneshot-text;
-  }
-</style>
+    <section id="projects">
+      <h2>Projects</h2>
+      {%- assign p=site.projects | where: "draft", false | reverse -%}
+      {%- include cardset.html set=p -%}
+    </section>
 
-<h1>Hi! I'm Ibraheem Rodrigues, aka OBAN</h1>
-
-<p>Based in London, I've been intrigued by coding, making and electronics ever since my first experiences with a Raspberry Pi
-  at age 9. I mainly work in Python, but also use JavaScript/Node.js quite a bit. I've also done some work in Godot and Django.
-  I've built this website with Jekyll to document the projects I've been working on.
-  <a href="/about">>></a>
-</p>
-
-<br>
-<br>
-
-<div id="work-grid">
-
-    <a href="https://pakit.cf"><img src="/assets/img/home/pakit.png" alt="Cri :'( the image is missing" id="pakit-image"></a>
-    <a href="https://pakit.cf" class="nostyle" id="pakit-text">
-      <h2 p>PAKit</h2>
-      My graphical tool for working with Starbound's .pak files, the first of its kind with over 700 downloads.
-    </a>
-
-    <a href="/projects/2018/headtorch/"><img src="/projects/2018/headtorch/img_7020.jpg" alt="Cri :'( the image is missing" id="headtorch-image"></a>
-    <a href="/projects/2018/headtorch/" class="nostyle" id="headtorch-text">
-      <h2>Homebrew Headtorch</h2>
-      My adventures into super bright LED lighting. 'You can't beat that homebrew shine!'
-    </a>
-
-    <a href="/projects/2018/headtorch/"><img src="/assets/img/2018/oneshot/oneshot-radar.png" alt="Cri :'( the image is missing" id="oneshot-image"></a>
-    <span id="oneshot-text">
-      <h2>One Shot</h2>
-      A multiplayer online space shooter I built for the
-      <a href="https://repl/it">repl.it</a> multiplayer games competition.
-      <br>
-      <br> Play it
-      <a href="http://oneshot--ibraheemrodrigues.repl.co">here</a>!
-      <br> Devlogs:
-      <a href="http://localhost:4000/blog/oneshot-d1-2/">Day 1&amp;2</a>
-      <a href="http://localhost:4000/blog/oneshot-d3-4/">Day 3&amp;4</a>
-    </span>
-</div>
+    <div id="footer">&copy; Ibraheem Rodrigues 2017 Onwards.</div>
+  </body>
+</html>

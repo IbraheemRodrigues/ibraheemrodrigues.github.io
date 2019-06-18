@@ -1,9 +1,11 @@
 ---
 title: Forge and Bellow Experiments
 
-pubdate: 2018-10-25 -
+date: 2018-10-25 -
+draft: true
 ---
-This is another one from the collection of projects which I seem to keep stabbing back at again and again - I've also written about some [electrolysis experiemnts](TODO LINK!!!) which also fall into this category. I've made all sorts of forges, mostly a mixture of plaster of paris and sand in flower pots. This design was consieved one day when I found myself in excess of bricks from an old garden feature.
+
+This is another one from the collection of projects which I seem to keep stabbing back at again and again.I've also written about some [electrolysis experiemnts](TODO LINK!!!) which also fall into this category. I've made all sorts of forges, mostly a mixture of plaster of paris and sand in flower pots. This design was consieved one day when I found myself in excess of bricks from an old garden feature.
 
 ## The Forge
 
@@ -21,6 +23,6 @@ Overall I'm pretty pleased with this experiment. The only other issue is that th
 
 ## Bellows
 
-This was a quick build, and worked resonably well. I sawed up an large drawer front that had seen better days into two large planks and a shoter section for the front. This was attached to one of the large bits at right angles, and to the other large section with hinges. A hole was drilled as the outlet and I then used thick blackout blind fabric to form 'bag' of the bellows, which worked well in place of the more traditional leather. 
+This was a quick build, and worked resonably well. I sawed up an large drawer front that had seen better days into two large planks and a shoter section for the front. This was attached to one of the large bits at right angles, and to the other large section with hinges. A hole was drilled as the outlet and I then used thick blackout blind fabric to form 'bag' of the bellows, which worked well in place of the more traditional leather.
 
 I didn't work this project far enough to be used - I had leakage issues, and would have liked to add a spring to push the bellows back a part, but didn't have one on hand. A one way valve for an inlet would also probably be needed if I manage to fix leakage issues.
