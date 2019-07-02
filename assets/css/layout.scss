@@ -15,7 +15,13 @@ section {
 
       img {
         width: 100%;
-        max-width: 490px;
+
+        &.half-image {
+          max-width: 490px;
+          @media only screen and (max-width: calc(2rem + 980px)) {
+            max-width: none;
+          }
+        }
       }
     }
   }

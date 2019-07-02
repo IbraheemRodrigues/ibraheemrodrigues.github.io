@@ -8,18 +8,10 @@ redirect_from:
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
-    {% seo %}
+    {%- include head.html -%}
 
     <link rel="stylesheet" href="{{ '/assets/css/index.css?v=' | append: site.github.build_revision | relative_url }}" />
     <script defer src="{{ '/assets/js/gel.js?v=' | append: site.github.build_revision | relative_url }}"></script>
-
-    <!-- Squares Stuff -->
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
-    <script defer src="{{ '/assets/js/squares.js?v=' | append: site.github.build_revision | relative_url }}"></script>
   </head>
   <body>
     <section id="hero">
@@ -45,5 +37,10 @@ redirect_from:
     </section>
 
     <div id="footer">&copy; Ibraheem Rodrigues 2017 Onwards.</div>
+
+
+    <!-- Squares Stuff -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
+    <script src="{{ '/assets/js/squares.js?v=' | append: site.github.build_revision | relative_url }}"></script>
   </body>
 </html>
