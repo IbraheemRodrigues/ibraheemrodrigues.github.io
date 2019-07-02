@@ -6,6 +6,8 @@ date: 2019-07-02 -
 image: /assets/p/2019/nut-locket/cover.jpg
 ---
 
+This project was an absolute blast, and although fustrating at times the outcome is excellent - though not without heaps of room for improvement.
+
 All parts were made from a 0.4mm sheet of brass. It's easily cut, hammered, soldered, anealed and to round it off can polished to an incredible golden shine; a truely beutiful material both to work with and to look at.
 
 ![All parts were made from a 0.4mm sheet of brass.](/assets/p/2019/nut-locket/sheet.png)
