@@ -17,9 +17,9 @@ section {
         width: 100%;
 
         &.half-image {
-          max-width: 490px;
-          @media only screen and (max-width: calc(2rem + 980px)) {
-            max-width: none;
+          width: 49%;
+          @media only screen and (max-width: 600px) {
+            width: 100%;
           }
         }
       }
