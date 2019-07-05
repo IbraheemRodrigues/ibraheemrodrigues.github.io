@@ -1,9 +1,7 @@
-const NUM = 70,
-  EXP_T = 5;
+let squaresSketch = p => {
+  const NUM = 70,
+    EXP_T = 5;
 
-const sketch_container = document.getElementById("sq-canvas");
-
-let sketch = p => {
   let vmin = Math.min(
       sketch_container.clientWidth,
       sketch_container.clientHeight
@@ -128,5 +126,3 @@ let sketch = p => {
     p.resizeCanvas(sketch_container.clientWidth, vmin);
   };
 };
-
-new p5(sketch, sketch_container);

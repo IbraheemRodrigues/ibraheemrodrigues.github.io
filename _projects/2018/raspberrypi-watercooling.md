@@ -18,7 +18,4 @@ I then set up a cooling loop, using a mini 12v aquarium pump I bought online, an
 
 I monitored the PI over SSH from my laptop for simplicity, and ran the Garlicoin CPU miner as a stress test, and overclocked to the default 'high' setting in RaspiConfig. I monitored the temperatures using the commands explained here, which flattened out at around 20˚C, proving that this concept, although entirely impractical, worked well. I also took pleasure in watching drops of dye spread around the pipes in pulses (see video).
 
-<div>
-  <img class="half-image" src="img_6796.jpg">
-  <iframe class="half-image" src="https://www.youtube.com/embed/hgnU9K_aeco?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div>
+<iframe src="https://www.youtube.com/embed/hgnU9K_aeco?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
