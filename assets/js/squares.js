@@ -1,4 +1,4 @@
-let squaresSketch = p => {
+function squaresSketch(p) {
   const NUM = 70,
     EXP_T = 5;
 
@@ -15,7 +15,7 @@ let squaresSketch = p => {
     objs: [],
     exps: []
   };
-  p.setup = () => {
+  p.setup = function() {
     p.createCanvas(sketch_container.clientWidth, vmin);
     for (i = 0; i < NUM; i++) {
       p.state.objs.push({
@@ -24,7 +24,7 @@ let squaresSketch = p => {
       });
     }
   };
-  p.draw = () => {
+  p.draw = function() {
     p.translate(p.width / 2, p.height / 2);
     p.colorMode(p.HSB, 1);
     p.rectMode(p.CENTER);
@@ -111,7 +111,9 @@ let squaresSketch = p => {
       p.fill(1, 0.2);
       p.circle(x, y, (Math.max(w, 20) * t) / EXP_T);
     }
-    p.state.exps = p.state.exps.filter(e => e[2] <= EXP_T);
+    p.state.exps = p.state.exps.filter(function(e) {
+      return e[2] <= EXP_T;
+    });
   };
 
   p.windowResized = function() {
@@ -125,4 +127,4 @@ let squaresSketch = p => {
     );
     p.resizeCanvas(sketch_container.clientWidth, vmin);
   };
-};
+}
