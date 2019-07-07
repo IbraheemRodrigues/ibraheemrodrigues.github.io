@@ -1,16 +1,23 @@
 function squaresSketch(p) {
+  let sketch_container = document.getElementById(p._userNode);
   const NUM = 70,
     EXP_T = 5;
 
-  let vmin = Math.min(window.innerWidth, window.innerHeight),
-    vmax = Math.max(window.innerWidth, window.innerHeight);
+  let vmin = Math.min(
+      sketch_container.clientWidth,
+      sketch_container.clientHeight
+    ),
+    vmax = Math.max(
+      sketch_container.clientWidth,
+      sketch_container.clientHeight
+    );
 
   p.state = {
     objs: [],
     exps: []
   };
   p.setup = function() {
-    p.createCanvas(window.innerWidth, vmin);
+    p.createCanvas(sketch_container.clientWidth, vmin);
     for (i = 0; i < NUM; i++) {
       p.state.objs.push({
         d: Math.random() * vmax,
@@ -111,8 +118,14 @@ function squaresSketch(p) {
   };
 
   p.windowResized = function() {
-    vmin = Math.min(window.innerWidth, window.innerHeight);
-    vmax = Math.max(window.innerWidth, window.innerHeight);
-    p.resizeCanvas(window.innerWidth, vmin);
+    vmin = Math.min(
+      sketch_container.clientWidth,
+      sketch_container.clientHeight
+    );
+    vmax = Math.max(
+      sketch_container.clientWidth,
+      sketch_container.clientHeight
+    );
+    p.resizeCanvas(sketch_container.clientWidth, vmin);
   };
 }
