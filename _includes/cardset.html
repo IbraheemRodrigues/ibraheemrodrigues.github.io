@@ -1,11 +1,26 @@
 <div class="cardset">
   {%- for thing in include.set -%}
-    <a href="{{ thing.url }}" class="card nostyle">
+    <div class="card">
+      <a href="{{ thing.url }}" class="mainlink nostyle">
 
-      <img src="{{ thing.image }}" alt="" />
+        <img src="{{ thing.image }}" alt="" class="background"/>
 
-      <span class="title">{{ thing.title }}</span>
-      <span class="description">{{ thing.description | default: thing.excerpt | strip_html | truncatewords: 25, '...' }}</span>
-    </a>
+        <span class="title">{{ thing.title }}</span>
+        <span class="description">{{ thing.description | default: thing.excerpt | strip_html  | truncatewords: 25, '...' }}</span>
+
+        <span class="date">{{thing.date | date: "%b %d, %Y"}}</span>
+
+      </a>
+      {%- if thing.links -%}
+        <span class="links">
+          {%- for l in thing.links -%}
+            <a href="{{l.link}}" class="cardlink nostyle">
+              <img src="/assets/img/octicons/{{ l.icon }}.svg" alt="">
+            </a>
+          {%- endfor -%}
+        </span>
+      {%- endif -%}
+
+      </div>
   {%- endfor -%}
 </div>

@@ -1,3 +1,8 @@
+/*
+ * Requires p5.js loaded
+ * call with p5(squaresSketch, "targetNode") to insert a canvas
+ */
+
 function squaresSketch(p) {
   let sketch_container = document.getElementById(p._userNode);
   const NUM = 70,

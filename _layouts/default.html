@@ -14,6 +14,18 @@
       <div id="icons">
         <a href="/"><img src="/assets/img/clip.svg" alt="📎"></a> 
       </div>
+      <span class="date">{{page.date | date: "%b %d, %Y"}}</span>
+
+    {%- if page.links -%}
+      <span class="links">
+        Links:
+        {%- for l in page.links -%}
+          <a href="{{l.link}}" class="iconlink nostyle">
+            <img src="/assets/img/octicons/{{ l.icon }}.svg" alt="">
+          </a>
+        {%- endfor -%}
+      </span>
+    {%- endif -%}
     </section>
 
     <section id="content">

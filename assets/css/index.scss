@@ -25,5 +25,16 @@ section {
     h1 {
       font-size: calc(3rem + 3vw);
     }
+
+    #sneaky-code {
+      position: absolute;
+      bottom: 0.5rem;
+      right: 0.5rem;
+
+      img {
+        width: auto;
+        height: 1rem;
+      }
+    }
   }
 }
