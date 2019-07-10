@@ -1,7 +1,7 @@
 <div class="cardset">
   {%- for thing in include.set -%}
     <div class="card">
-      <a href="{{ thing.url }}" class="mainlink nostyle">
+      <a href="{{ thing.redirect_to | default: thing.url }}" class="mainlink nostyle">
 
         <img src="{{ thing.image }}" alt="" class="background"/>
 
