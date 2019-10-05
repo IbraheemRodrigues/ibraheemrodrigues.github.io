@@ -9,13 +9,16 @@ section {
     text-shadow: $pop-shadow;
     font-size: 1.5rem;
 
+    // width: 100%;
+    // max-width: 1000px;
+
+    // padding: 0 calc(100vw - 1000px);
+
     .date {
-      margin: 0.5rem;
+      padding: 1rem;
       position: absolute;
       bottom: 0;
-
-      width: 100%;
-      max-width: 1000px;
+      left: 1rem;
     }
     .links {
       margin: 0.5rem;

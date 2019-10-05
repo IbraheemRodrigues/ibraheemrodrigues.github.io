@@ -1,53 +1,56 @@
 ---
 redirect_from:
-  - /p
-  - /p/2017
-  - /p/2018
-  - /p/2019
+- /p
+- /p/2017
+- /p/2018
+- /p/2019
 ---
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    {%- include head.html -%}
 
-    <link rel="stylesheet" href="{{ '/assets/css/index.css?v=' | append: site.github.build_revision | relative_url }}" />
-    <script defer src="{{ '/assets/js/gel.js?v=' | append: site.github.build_revision | relative_url }}"></script>
-  </head>
-  <body>
-    <section id="hero">
-      <div id="hero-background"></div>
-      <h1>
-          {{ site.title }}
-        <span class="small">{{ site.description }}</span>
-      </h1>
-      <div id="icons">
-        <a href="http://github.com/ibraheemr" id="github" class="nostyle">
-          <img src="/assets/img/octicons/mark-github.svg" alt="GitHub">
-        </a>
-        <a href="mailto://contact@ibraheemrodrigues.com" id="email" class="nostyle">
-          <img src="/assets/img/octicons/mail-read.svg" alt="Email">
-        </a>
+<head>
+  {%- include head.html -%}
 
-      </div>
-      <a href="/assets/js/squares.js" id="sneaky-code" >
-        <img src="/assets/img/octicons/code.svg" alt="Code" style="float: right">
+  <link rel="stylesheet" href="{{ '/assets/css/index.css?v=' | append: site.github.build_revision | relative_url }}" />
+  <script defer src="{{ '/assets/js/gel.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+</head>
+
+<body>
+  <section id="hero">
+    <div id="hero-background"></div>
+    <h1>
+      {{ site.title }}
+      <span class="small">{{ site.description }}</span>
+    </h1>
+    <div id="icons">
+      <a href="http://github.com/ibraheemr" id="github" class="nostyle">
+        <img src="/assets/img/octicons/mark-github.svg" alt="GitHub">
       </a>
-    </section>
+      <a href="mailto://contact@ibraheemrodrigues.com" id="email" class="nostyle">
+        <img src="/assets/img/octicons/mail-read.svg" alt="Email">
+      </a>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      {%- assign p=site.projects | where: "draft", false | reverse -%}
-      {%- include cardset.html set=p -%}
-    </section>
+    </div>
+    <a href="/assets/js/squares.js" id="sneaky-code">
+      <img src="/assets/img/octicons/code.svg" alt="Code" style="float: right">
+    </a>
+  </section>
 
-    <div id="footer">&copy; Ibraheem Rodrigues 2017 Onwards.</div>
+  <section id="projects">
+    <h2>Projects</h2>
+    {%- assign p=site.projects | where: "draft", false | reverse -%}
+    {%- include cardset.html set=p -%}
+  </section>
+
+  <div id="footer">&copy; Ibraheem Rodrigues 2017 Onwards.</div>
 
 
-    <!-- Squares Stuff -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
-    <script src="{{ '/assets/js/squares.js?v=' | append: site.github.build_revision | relative_url }}"></script>
-    <script>
-      new p5(squaresSketch, "hero-background");
-    </script>
-  </body>
+  <!-- Squares Stuff -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
+  <script src="{{ '/assets/js/squares.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+  <script>
+    new p5(squaresSketch, "hero-background");
+  </script>
+</body>
+
 </html>
