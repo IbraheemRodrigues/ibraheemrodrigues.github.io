@@ -20,3 +20,9 @@ The first image is my rendition of [this](https://www.youtube.com/watch?v=yrMee2
 ![](/assets/p/2019/blender/week2/10c.gif){:.half-image}
 
 Excusing the low quality of the gif, this was my attempt to create a seamless particle loop using the mighty Animation Nodes (best plugin!). No matter what I did I was unable to avoid a small bit of stuttering at the looping point, but overall I'm pleased with the result.
+
+### Week 3 - The DMate Device.
+
+![](/assets/p/2019/blender/week3/dmate.png)
+
+A modeling amd materials study based on the aesthetic of camera lenses and watches.
