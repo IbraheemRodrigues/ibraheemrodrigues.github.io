@@ -30,6 +30,7 @@ defaults:
       type: "projects"
     values:
       layout: default
+      comments: true
 
 plugins:
   - jekyll-redirect-from

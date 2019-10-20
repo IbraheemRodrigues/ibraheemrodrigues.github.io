@@ -1,39 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
 
-    {%- include head.html -%}
+<head>
 
-    <link rel="stylesheet" href="{{ '/assets/css/layout.css?v=' | append: site.github.build_revision | relative_url }}" />
-    <script defer src="{{ '/assets/js/gel.js?v=' | append: site.github.build_revision | relative_url }}"></script>
-  </head>
-  <body>
-    <section id="hero" style="background-image:url();">
-      <h1>{{ page.title }}</h1>
-      <div style="background-image: url({{ page.image }});" id="hero-background"></div>
-      <div id="icons">
-        <a href="/"><img src="/assets/img/clip.svg" alt="📎"></a> 
-      </div>
-      <span class="date">{{page.date | date: "%b %d, %Y"}}</span>
+  {%- include head.html -%}
+
+  <link rel="stylesheet" href="{{ '/assets/css/layout.css?v=' | append: site.github.build_revision | relative_url }}" />
+  <script defer src="{{ '/assets/js/gel.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+</head>
+
+<body>
+  <section id="hero" style="background-image:url();">
+    <h1>{{ page.title }}</h1>
+    <div style="background-image: url({{ page.image }});" id="hero-background"></div>
+    <div id="icons">
+      <a href="/"><img src="/assets/img/clip.svg" alt="📎"></a>
+    </div>
+    <span class="date">{{page.date | date: "%b %d, %Y"}}</span>
 
     {%- if page.links -%}
-      <span class="links">
-        Links:
-        {%- for l in page.links -%}
-          <a href="{{l.link}}" class="iconlink nostyle">
-            <img src="/assets/img/octicons/{{ l.icon }}.svg" alt="">
-          </a>
-        {%- endfor -%}
-      </span>
+    <span class="links">
+      Links:
+      {%- for l in page.links -%}
+      <a href="{{l.link}}" class="iconlink nostyle">
+        <img src="/assets/img/octicons/{{ l.icon }}.svg" alt="">
+      </a>
+      {%- endfor -%}
+    </span>
     {%- endif -%}
-    </section>
+  </section>
 
-    <section id="content">
-      <div class="container">
-          {{ content }}
-      </div>
-    </section>
+  <section id="content">
+    <div class="container">
+      {{ content }}
+    </div>
+  </section>
 
-    <div id="footer">&copy; Ibraheem Rodrigues 2017 Onwards.</div>
-  </body>
+  {% if page.comments %}
+  <section id="comments">
+    <div id="disqus_thread" class="container"></div>
+    <script>
+
+      /**
+      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+      /*
+      var disqus_config = function () {
+      this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+      */
+      (function () { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://ibraheemrodrigues-com.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+        Disqus.</a></noscript>
+  </section>
+  {% endif %}
+
+  <div id="footer">&copy; Ibraheem Rodrigues 2017 Onwards.</div>
+</body>
+
 </html>
