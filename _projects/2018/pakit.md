@@ -3,9 +3,11 @@ title: PAKit
 description: PAKit is the graphical tool for working with Starbound's .pak files. No more fussing around on the command line!
 
 links:
-  - icon: mark-github
+  - text: GitHub
+    icon: mark-github
     link: https://github.com/IbraheemR/pakit
-  - icon: link-external
+  - text: Get It
+    icon: link-external
     link: http://pakit.ibraheemrodrigues.com
 
 date: 2018-03-04 -

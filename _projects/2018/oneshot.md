@@ -3,9 +3,11 @@ title: OneShot - Devlog
 description: A space shooter made for the repl.it July 2018 code jam, using p5.js, node.js and socket.io.
 
 links:
-  - icon: code
+  - text: Code
+    icon: code
     link: https://repl.it/@IbraheemRodrigues/OneShot
-  - icon: link-external
+  - text: Play
+    icon: link-external
     link: https://OneShot.ibraheemrodrigues.repl.co
 
 date: 2018-07-26 -

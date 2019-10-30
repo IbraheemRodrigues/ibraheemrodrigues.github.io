@@ -17,6 +17,8 @@
       {%- for l in thing.links -%}
       <a href="{{l.link}}" class="cardlink nostyle">
         <img src="/assets/img/octicons/{{ l.icon }}.svg" alt="">
+
+        {{l.text}}
       </a>
       {%- endfor -%}
     </span>
