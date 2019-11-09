@@ -36,10 +36,16 @@ Procedural textures are really cool. A few minutes building a shader and BAM, in
 
 ### Week 5 - Sparks Animation (Cycles)
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/823sUwlC-2c" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/823sUwlC-2c?controls=0" frameborder="0" allowfullscreen></iframe>
 
 I've been finding I'm overestimating my abilities and getting caught up, so for the next few weeks I'm going to stick to following tutorials. This one was based off of [this](https://www.youtube.com/watch?v=MGRhJf0xdE8) tutorial by BlenderGuru. 
 
 I also took the opportunity to brush up on my lighting, yielding the image below.
 
 ![](/assets/p/2019/blender/week5/sparks.jpeg)
+
+### Week 6 - Realistic Rain (Cycles)
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/NgksT1Nj0ms?controls=0" frameborder="0" allowfullscreen></iframe>
+
+This is probably by best render yet, and a fun one too. Based off of [this tutorial](https://www.youtube.com/watch?v=35bbyAJodEQ).
