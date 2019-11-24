@@ -49,3 +49,19 @@ I also took the opportunity to brush up on my lighting, yielding the image below
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/NgksT1Nj0ms?controls=0" frameborder="0" allowfullscreen></iframe>
 
 This is probably by best render yet, and a fun one too. Based off of [this tutorial](https://www.youtube.com/watch?v=35bbyAJodEQ).
+
+
+### Week 7 - Assorted Jars
+
+![](/assets/p/2019/blender/week7/vase1.jpeg)
+![](/assets/p/2019/blender/week7/vase2.jpeg){:.half-image}
+![](/assets/p/2019/blender/week7/vase3.jpeg){:.half-image}
+
+A few jars I had fun creating.
+Based off of [this tutorial](https://www.youtube.com/watch?v=DGKTk5wPIZM)
+
+### Week 8 - Clay Shader
+
+![](/assets/p/2019/blender/week8/clay.png){:.half-image}
+
+A clay shader I tested making, complete with procedural finger prints. Based off of [this](https://www.youtube.com/watch?v=wTu3Xssw67Q).
