@@ -65,3 +65,9 @@ Based off of [this tutorial](https://www.youtube.com/watch?v=DGKTk5wPIZM)
 ![](/assets/p/2019/blender/week8/clay.png){:.half-image}
 
 A clay shader I tested making, complete with procedural finger prints. Based off of [this](https://www.youtube.com/watch?v=wTu3Xssw67Q).
+
+### Week 9 - Low Poly Frog
+
+![](/assets/p/2019/blender/week9/frog.jpeg){:.half-image}
+
+Pond.
