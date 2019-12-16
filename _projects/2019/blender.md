@@ -51,7 +51,7 @@ I also took the opportunity to brush up on my lighting, yielding the image below
 This is probably by best render yet, and a fun one too. Based off of [this tutorial](https://www.youtube.com/watch?v=35bbyAJodEQ).
 
 
-### Week 7 - Assorted Jars
+### Week 7 - Assorted Jars (Cycles)
 
 ![](/assets/p/2019/blender/week7/vase1.jpeg)
 ![](/assets/p/2019/blender/week7/vase2.jpeg){:.half-image}
@@ -66,8 +66,12 @@ Based off of [this tutorial](https://www.youtube.com/watch?v=DGKTk5wPIZM)
 
 A clay shader I tested making, complete with procedural finger prints. Based off of [this](https://www.youtube.com/watch?v=wTu3Xssw67Q).
 
-### Week 9 - Low Poly Frog
+### Week 9 - Low Poly Frog (Cycles)
 
 ![](/assets/p/2019/blender/week9/frog.jpeg){:.half-image}
 
 Pond.
+
+### Week 10 - Seamless Loop (EEVEE)
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/rArWrCeBbak?controls=0" frameborder="0" allowfullscreen></iframe>
