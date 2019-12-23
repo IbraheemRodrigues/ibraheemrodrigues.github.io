@@ -75,3 +75,9 @@ Pond.
 ### Week 10 - Seamless Loop (EEVEE)
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/rArWrCeBbak?controls=0" frameborder="0" allowfullscreen></iframe>
+
+### Week 11 - Low Mountain (Cycles)
+
+![](/assets/p/2019/blender/week11/mountain.jpeg)
+
+I've been following the work of [Roman Klčo](http://romanklco.com/) on his YouTube channel Polygon Runway for a while now, and I wanted to have a go at emulating his style. This comes no where near to the level of detail he puts in, but I'm happy with the final result.
