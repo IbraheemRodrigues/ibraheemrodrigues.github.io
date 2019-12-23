@@ -74,7 +74,7 @@ Pond.
 
 ### Week 10 - Seamless Loop (EEVEE)
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/rArWrCeBbak?controls=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/i0xbmFMcAzU?controls=0" frameborder="0" allowfullscreen></iframe>
 
 ### Week 11 - Low Mountain (Cycles)
 
