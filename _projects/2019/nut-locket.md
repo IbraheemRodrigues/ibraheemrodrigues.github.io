@@ -4,15 +4,22 @@ description: Finally a safe place to store my emergency nuts.
 
 date: 2019-07-02 -
 image: /assets/p/2019/nut-locket/cover.jpg
+
+links:
+  - text: Video
+    icon: link-external
+    link: https://youtu.be/oleunLBxrCU 
 ---
+
+## [Video](https://youtu.be/oleunLBxrCU) out now
 
 This project was an absolute blast, and although fustrating at times the outcome is excellent - though not without heaps of room for improvement.
 
-All parts were made from a 0.4mm sheet of brass. It's easily cut, hammered, soldered, anealed and to round it off can polished to an incredible golden shine; a truely beutiful material both to work with and to look at.
+All parts were made from a 0.4mm sheet of brass. It's easily cut, hammered, soldered, anealed and to round it off can polished to an incredible golden shine; a truely beautiful material both to work with and to look at.
 
 ![All parts were made from a 0.4mm sheet of brass.](/assets/p/2019/nut-locket/sheet.png)
 
-The rim was bent into shape and soldered in place, aided along by a powerful flux and a pair of medical forceps. As beautiful as the filets of solder seen in this photo are, they were eventually lost after many repeated reheatings to attach hinge and clasp. The wet rag trick helped greatly in getting there.
+The rim was bent into shape and soldered in place, aided along by a powerful flux and a pair of medical forceps. As beautiful as the filets of solder seen in this photo are, they were eventually lost after many repeated reheatings to attach hinge and clasp. The wet rag trick I show in the video helped greatly in getting there.
 
 ![The rim was bent into shape and soldered in place.](/assets/p/2019/nut-locket/solder1.jpg){: .half-image}
 ![](/assets/p/2019/nut-locket/solder2.png){: .half-image}
