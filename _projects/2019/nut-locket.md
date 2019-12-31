@@ -8,10 +8,10 @@ image: /assets/p/2019/nut-locket/cover.jpg
 links:
   - text: Video
     icon: link-external
-    link: https://youtu.be/oleunLBxrCU 
+    link: https://youtu.be/orQejn3VCsE 
 ---
 
-## [Video](https://youtu.be/oleunLBxrCU) out now
+## [Video](https://youtu.be/orQejn3VCsE ) out now
 
 This project was an absolute blast, and although fustrating at times the outcome is excellent - though not without heaps of room for improvement.
 
