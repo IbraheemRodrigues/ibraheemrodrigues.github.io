@@ -13,6 +13,11 @@ redirect_from:
 
   <link rel="stylesheet" href="{{ '/assets/css/index.css?v=' | append: site.github.build_revision | relative_url }}" />
   <script defer src="{{ '/assets/js/gel.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+
+  <!-- Squares preload -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
+  <script src="{{ '/assets/js/squares.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+
 </head>
 
 <body>
@@ -46,8 +51,6 @@ redirect_from:
 
 
   <!-- Squares Stuff -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
-  <script src="{{ '/assets/js/squares.js?v=' | append: site.github.build_revision | relative_url }}"></script>
   <script>
     new p5(squaresSketch, "hero-background");
   </script>

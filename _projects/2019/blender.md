@@ -1,6 +1,6 @@
 ---
-title: 2019 Blender Gallery
-description: I'm learning Blender 2.8 by doing a render a week for 6 months.
+title: 2019/2020 Blender Gallery
+description: Pushing for 52 renders by October 2020
 
 date: 2019-10-05 -
 image: /assets/p/2019/blender/week1/lowpoly_procedural_island5.jpeg
