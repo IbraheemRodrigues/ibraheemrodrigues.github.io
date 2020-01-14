@@ -13,16 +13,19 @@ redirect_from:
 
   <link rel="stylesheet" href="{{ '/assets/css/index.css?v=' | append: site.github.build_revision | relative_url }}" />
   <script defer src="{{ '/assets/js/gel.js?v=' | append: site.github.build_revision | relative_url }}"></script>
-
-  <!-- Squares preload -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
-  <script src="{{ '/assets/js/squares.js?v=' | append: site.github.build_revision | relative_url }}"></script>
-
 </head>
 
 <body>
   <section id="hero">
     <div id="hero-background"></div>
+
+    <!-- Squares Stuff -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
+    <script src="{{ '/assets/js/squares.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+    <script>
+      new p5(squaresSketch, "hero-background");
+    </script>
+
     <h1>
       {{ site.title }}
       <span class="small">{{ site.description }}</span>
@@ -49,11 +52,6 @@ redirect_from:
 
   <div id="footer">&copy; Ibraheem Rodrigues 2017 Onwards.</div>
 
-
-  <!-- Squares Stuff -->
-  <script>
-    new p5(squaresSketch, "hero-background");
-  </script>
 </body>
 
 </html>

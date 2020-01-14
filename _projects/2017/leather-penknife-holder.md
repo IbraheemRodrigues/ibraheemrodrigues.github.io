@@ -5,7 +5,7 @@ date: 2017-09-07 -
 image: /assets/p/2017/leather-penknife-holder/img_4645.jpg
 ---
 
-Ever since seeing it done on the Make: channel around 5 years ago, I've been intrigued by wet forming leather. I've tried once or twice before, but to no avail, undoubtedly down to the poor quality furniture leather I attempted to use. Recently, I happened to get a small leather offcut of quite significant thickness and quality, so I decided to revisit this project, to make a belt mounted holster for my penknife.
+Ever since seeing it done on the Make: channel around 5 years ago, I've been intrigued by wet forming leather. I've tried once or twice before, but to no avail, undoubtedly down to the poor quality furniture leather I attempted to use. Recently, I happened to get a small leather offcut of quite significant thickness and quality, so I decided to revisit this project, to make a belt-mounted holster for my penknife.
 
 ![](/assets/p/2017/leather-penknife-holder/img_4458.jpg){: .half-image}
 ![](/assets/p/2017/leather-penknife-holder/img_4460.jpg){: .half-image}
@@ -14,7 +14,7 @@ I started by making the form, the male piece from a small offcut of pine that wa
 
 After checking everything fitted together, I preceded to soak the leather in warm water for around half an hour and then clamped it in place. The wait began.
 
-24 hours later, I de-moulded and found that it had worked. The leather was nicely conformed to the mould and kept its shape. I traced a lip, and cut it out, before cutting a matching back piece. The leather had warped near the top of the holder, so I trimmed that straight. I applied PVA glue to the regions to be joined and clamped them in place. A few hours later, they were nicely held together, and so I marked out and drilled some small holes with my rotary tool to sew through. I used thick thread and coated it with wax to make it more durable. A simple saddle stitch took me only around 15 minutes, after which I tied it off.
+24 hours later, I demoulded and found that it had worked. The leather was nicely conformed to the mould and kept its shape. I traced a lip, and cut it out, before cutting a matching back piece. The leather had warped near the top of the holder, so I trimmed that straight. I applied PVA glue to the regions to be joined and clamped them in place. A few hours later, they were nicely held together, and so I marked out and drilled some small holes with my rotary tool to sew through. I used thick thread and coated it with wax to make it more durable. A simple saddle stitch took me only around 15 minutes, after which I tied it off.
 
 ![](/assets/p/2017/leather-penknife-holder/img_4468.jpg){: .half-image}
 ![](/assets/p/2017/leather-penknife-holder/img_4473.jpg){: .half-image}

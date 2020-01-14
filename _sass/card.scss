@@ -37,6 +37,10 @@
   &:hover {
     text-shadow: $pop-shadow;
     box-shadow: 0 0 1rem var(--border-color);
+
+    background-color: var(--gel-color);
+
+    border: $border-width solid var(--border-color);
   }
 
   a.mainlink {

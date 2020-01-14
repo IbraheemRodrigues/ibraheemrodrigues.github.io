@@ -100,8 +100,12 @@ td {
 
 blockquote {
   margin-left: 0;
-  border-left: 0.1em solid white;
-  padding-left: 1em;
+  border-left: 0.5rem solid white;
+
+  background-color: #222222;
+  p {
+    padding: 1rem;
+  }
 }
 
 // Inline/Text element styles
@@ -121,14 +125,14 @@ h1 {
 }
 
 h2 {
-  font-size: 3em;
+  font-size: 2em;
 }
 
 h3,
 h4,
 h5,
 h6 {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 a {
