@@ -8,10 +8,10 @@ links:
     link: https://github.com/IbraheemR/pakit
   - text: Get It
     icon: link-external
-    link: http://pakit.ibraheemrodrigues.com
+    link: https://pakit.ibraheemrodrigues.com
 
 date: 2018-03-04 -
 image: /assets/p/2018/pakit.png
 
-redirect_to: http://pakit.ibraheemrodrigues.com
+redirect_to: https://pakit.ibraheemrodrigues.com
 ---

@@ -80,4 +80,4 @@ Pond.
 
 ![](/assets/p/2019/blender/week11/mountain.jpeg)
 
-I've been following the work of [Roman Klčo](http://romanklco.com/) on his YouTube channel Polygon Runway for a while now, and I wanted to have a go at emulating his style. This comes nowhere near to the level of detail he puts in, but I'm happy with the final result.
+I've been following the work of [Roman Klčo](https://romanklco.com/) on his YouTube channel Polygon Runway for a while now, and I wanted to have a go at emulating his style. This comes nowhere near to the level of detail he puts in, but I'm happy with the final result.
