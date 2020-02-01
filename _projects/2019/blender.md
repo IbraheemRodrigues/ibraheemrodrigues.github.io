@@ -87,3 +87,14 @@ I've been following the work of [Roman Klčo](https://romanklco.com/) on his You
 ![](/assets/p/2019/blender/week12/wip.jpeg)
 
 I've embarked on a project to model the [Halley VI Antarctic](https://www.bas.ac.uk/polar-operations/sites-and-facilities/facility/halley/) research station in Blender. This will likely take me a few weeks, so here is a WIP screenshot for the last two weeks showing my progress.
+
+## Week 14 - Toroidal Annihilation
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/9H9dEC7Tguk?controls=0" frameborder="0" allowfullscreen></iframe>
+
+I'm taking a break from Halley VI, and doing a smaller test.
+
+## Week 15 - Some Grease Pencil Tests
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/QMHGSHN71Z8?controls=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/MWLH2A2KOYs?controls=0" frameborder="0" allowfullscreen></iframe>
