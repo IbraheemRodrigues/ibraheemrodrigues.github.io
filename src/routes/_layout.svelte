@@ -1,30 +1,21 @@
 <script>
   import Nav from "../components/Nav.svelte";
-  import RandomGel from "../components/RandomGel.svelte";
 
   export let segment;
 </script>
 
 <style>
-  main {
-    position: relative;
-    background-color: black;
-    padding: 2em;
+  .constrain-content {
+    max-width: 60rem;
     margin: 0 auto;
-    box-sizing: border-box;
-  }
-
-  .not-mainpage {
-    max-width: 56em;
+    padding: 1rem;
   }
 </style>
 
-{#if segment !== undefined}
-  <RandomGel>
-    <Nav {segment} />
-  </RandomGel>
+{#if segment !== 'home'}
+  <Nav {segment} />
 {/if}
 
-<main class:not-mainpage={segment !== undefined}>
+<div id="main" class:constrain-content={segment !== 'home'}>
   <slot />
-</main>
+</div>

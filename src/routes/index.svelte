@@ -1,9 +1,32 @@
 <script>
-  import CardGrid from "../components/card/CardGrid.svelte";
+  import RandomGel from "../components/RandomGel.svelte";
+
+  import Nav from "../components/Nav.svelte";
+
+  import Card from "../components/card/Card.svelte";
   import SquaresHero from "../components/squares/SquaresHero.svelte";
+
+  export const segment = "home";
+
+  const featured = [
+    { title: "Hello123", slug: "test-123" },
+    { title: "Hello124", slug: "test-124" },
+    { title: "Hello125", slug: "test-125" },
+    { title: "Hello126", slug: "test-126" }
+  ];
 </script>
 
 <style>
+  #nav {
+    z-index: 100;
+
+    width: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
   #title {
     z-index: 100;
 
@@ -13,16 +36,40 @@
 
     font-size: 3vmin;
   }
+
+  #squares-hero {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+  }
 </style>
 
 <svelte:head>
   <title>Ibby</title>
 </svelte:head>
-<SquaresHero />
+
+<div id="nav">
+
+  <Nav segment="home" />
+
+</div>
 
 <div id="title">
 
   <h1>Ibraheem Rodrigues</h1>
   <h2>Programmer & Maker</h2>
 
+</div>
+
+<div id="squares-hero">
+  <SquaresHero />
+</div>
+
+<div id="featured-projects">
+  {#each featured as post}
+    <Card data={post} />
+  {/each}
 </div>
