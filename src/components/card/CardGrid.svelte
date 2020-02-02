@@ -1,9 +1,3 @@
-<script>
-  import Card from "./Card.svelte";
-
-  let cards = ["hello", "bye", "spoon"];
-</script>
-
 <style>
   #cardgrid {
     display: grid;
@@ -15,7 +9,5 @@
 </style>
 
 <div id="cardgrid">
-  {#each cards as cardtext}
-    <Card>{cardtext}</Card>
-  {/each}
+  <slot />
 </div>

@@ -64,7 +64,7 @@
 
       <li>
         <a
-          href="https://www.youtube.com/channel/UCKe4t2irPeZfM4w_Hf7X1NA/videos?view_as=subscriber"
+          href="https://www.youtube.com/channel/UCKe4t2irPeZfM4w_Hf7X1NA"
           target="_blank"
           rel="noopener">
           youtube

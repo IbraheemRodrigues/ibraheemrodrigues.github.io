@@ -1,7 +1,4 @@
 <script context="module">
-  import CardGrid from "../../components/card/CardGrid.svelte";
-  import Card from "../../components/card/Card.svelte";
-
   export function preload({ params, query }) {
     return this.fetch(`p.json`)
       .then(r => r.json())
@@ -12,6 +9,9 @@
 </script>
 
 <script>
+  import CardGrid from "../../components/card/CardGrid.svelte";
+  import Card from "../../components/card/Card.svelte";
+
   export let posts;
 </script>
 
@@ -27,6 +27,6 @@
 
 <CardGrid>
   {#each posts as post}
-    <Card data={{ text: post.title, link: `${post.link}` }} />
+    <Card data={{ text: post.title, link: post.link }} />
   {/each}
 </CardGrid>

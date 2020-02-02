@@ -1,11 +1,11 @@
 import posts from './_posts.js';
 
-const contents = JSON.stringify(posts.map(post => {
-	return {
-		title: post.title,
-		link: `p/${post.slug}`
-	};
-}));
+
+const contents = JSON.stringify(posts.map(post => ({
+	title: "TODODO",
+	link: `p${post.slug}`
+})
+));
 
 export function get(req, res) {
 	res.writeHead(200, {

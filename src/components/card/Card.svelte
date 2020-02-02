@@ -18,13 +18,20 @@
   .card:hover {
     border: 1px solid var(--gel-high);
   }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
 </style>
 
 <RandomGel>
-  <div class="card">
+  <a href={data.link}>
+    <div class="card">
 
-    <img src="" alt="" />
+      <img src="" alt="" />
 
-    <div class="text">{data.text}</div>
-  </div>
+      <div class="text">{data.text}</div>
+    </div>
+  </a>
 </RandomGel>
