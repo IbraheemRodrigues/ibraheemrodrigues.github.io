@@ -2,8 +2,8 @@ import posts from './_posts.js';
 
 
 const contents = JSON.stringify(posts.map(post => ({
-	title: "TODODO",
-	link: `p${post.slug}`
+	title: post.title,
+	link: `p/${post.slug}`
 })
 ));
 

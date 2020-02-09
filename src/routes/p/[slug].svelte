@@ -12,6 +12,8 @@
 </script>
 
 <script>
+  import Disqus from "../../components/Disqus.svelte";
+
   export let post;
 </script>
 
@@ -41,6 +43,15 @@
   .content :global(li) {
     margin: 0 0 0.5em 0;
   }
+  .content :global(img.half-image) {
+    width: 49%;
+  }
+
+  @media (max-width: 400px) {
+    .content :global(img.half-image) {
+      width: 100%;
+    }
+  }
 </style>
 
 <svelte:head>
@@ -52,3 +63,7 @@
 <div class="content">
   {@html post.html}
 </div>
+
+<hr />
+
+<Disqus identifier={post.slug} />

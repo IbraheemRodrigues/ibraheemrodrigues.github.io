@@ -1,9 +1,15 @@
 import path from "path";
 import fs from "fs";
 
-import fm from "front-matter";
 import MarkdownIt from "markdown-it";
-const md = new MarkdownIt();
+import MarkdownItComments from "markdown-it-inline-comments";
+import MarkdownItAttrs from "markdown-it-attrs";
+
+import fm from "front-matter";
+
+const md = new MarkdownIt()
+	.use(MarkdownItComments)
+	.use(MarkdownItAttrs);
 
 const cwd = process.cwd()
 const posts_folder = path.join(cwd, 'posts')
@@ -27,7 +33,7 @@ function walk(dir, slug = "") {
 	var results = [];
 	var list = fs.readdirSync(dir);
 	list.forEach(function (file) {
-		slug = slug + '/' + file
+		slug = slug ? slug + '-' + file : file;
 		file = dir + '/' + file;
 		var stat = fs.statSync(file);
 		if (stat && stat.isDirectory()) {
