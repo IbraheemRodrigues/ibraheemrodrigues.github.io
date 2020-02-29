@@ -1,9 +1,7 @@
-import posts from './_posts.js';
-
 const lookup = new Map();
-posts.forEach(post => {
-	lookup.set(post.slug, JSON.stringify(post));
-});
+// posts.forEach(post => {
+// 	lookup.set(post.slug, JSON.stringify(post));
+// });
 
 export function get(req, res, next) {
 	const { slug } = req.params;

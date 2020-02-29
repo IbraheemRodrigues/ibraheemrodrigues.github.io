@@ -1,6 +1,6 @@
 <script context="module">
   export function preload({ params, query }) {
-    return this.fetch(`p.json`)
+    return this.fetch("http://content.ibraheemrodrigues.com/index.json")
       .then(r => r.json())
       .then(posts => {
         return { posts };
@@ -27,6 +27,6 @@
 
 <CardGrid>
   {#each posts as post}
-    <Card data={{ text: post.title, link: post.link }} />
+    <Card data={{ text: post.meta.title, link: `/p/${post.slug}` }} />
   {/each}
 </CardGrid>
