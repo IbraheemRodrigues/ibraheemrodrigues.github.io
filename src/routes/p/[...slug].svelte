@@ -1,6 +1,8 @@
 <script context="module">
   export async function preload({ params, query }) {
-    const res = await this.fetch(`p/${params.slug}.json`);
+    const res = await this.fetch(
+      `https://content.ibraheemrodrigues.com/p/${params.slug.join("/")}.json`
+    );
     const data = await res.json();
 
     if (res.status === 200) {
@@ -55,10 +57,10 @@
 </style>
 
 <svelte:head>
-  <title>{post.title}</title>
+  <title>{post.meta.title}</title>
 </svelte:head>
 
-<h1>{post.title}</h1>
+<h1>{post.meta.title}</h1>
 
 <div class="content">
   {@html post.html}

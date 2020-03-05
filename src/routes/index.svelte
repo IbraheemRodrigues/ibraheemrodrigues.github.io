@@ -1,8 +1,6 @@
 <script>
   import RandomGel from "../components/RandomGel.svelte";
 
-  import Nav from "../components/Nav.svelte";
-
   import Card from "../components/card/Card.svelte";
   import SquaresHero from "../components/squares/SquaresHero.svelte";
 
@@ -17,16 +15,6 @@
 </script>
 
 <style>
-  #nav {
-    z-index: 100;
-
-    width: 100%;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-
   #title {
     z-index: 100;
 
@@ -44,18 +32,14 @@
 
     width: 100vw;
     height: 100vh;
+
+    z-index: -100;
   }
 </style>
 
 <svelte:head>
   <title>Ibby</title>
 </svelte:head>
-
-<div id="nav">
-
-  <Nav segment="home" />
-
-</div>
 
 <div id="title">
 
@@ -68,8 +52,8 @@
   <SquaresHero />
 </div>
 
-<div id="featured-projects">
+<!-- <div id="featured-projects">
   {#each featured as post}
     <Card data={post} />
   {/each}
-</div>
+</div> -->

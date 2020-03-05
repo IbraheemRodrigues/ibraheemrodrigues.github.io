@@ -1,11 +1,16 @@
 <script>
-  import { onMount } from "svelte";
+  import { onMount, onDestroy } from "svelte";
   import squaresSketch from "./sketch";
 
   let hero;
+  let sq;
 
   onMount(() => {
-    new p5(squaresSketch(hero), hero);
+    sq = new p5(squaresSketch(hero), hero);
+  });
+
+  onDestroy(() => {
+    // sq.remove();
   });
 </script>
 
