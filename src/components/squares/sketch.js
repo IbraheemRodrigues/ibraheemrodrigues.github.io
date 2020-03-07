@@ -46,8 +46,8 @@ export default (sketch_container) => p => {
             let x = d * Math.cos(r),
                 y = d * Math.sin(r);
             let a = Math.atan2(
-                p.mouseY - d * Math.sin(r) - x_offset,
-                p.mouseX - d * Math.cos(r) - y_offset
+                my - d * Math.sin(r),
+                mx - d * Math.cos(r)
             );
             let w = d * 0.1;
 
