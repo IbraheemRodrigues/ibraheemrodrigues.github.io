@@ -1,9 +1,10 @@
 {
+	"author": "Ibraheem Rodrigues",
 	"background_color": "#000000",
-	"theme_color": "#333333",
-	"name": "TODO",
-	"short_name": "TODO",
-	"display": "minimal-ui",
+	"theme_color": "#0DA6F2",
+	"name": "Ibraheem Rodrigues | Programmer & Maker",
+	"short_name": "Ibraheem Rodrigues",
+	"display": "browser",
 	"start_url": "/",
 	"icons": [
 		{

@@ -1,4 +1,5 @@
 <script>
+  import RandomGel from "../components/RandomGel.svelte";
   import Nav from "../components/nav/Nav.svelte";
 
   export let segment;
@@ -12,10 +13,14 @@
   }
 </style>
 
-{#if segment !== 'home'}
-  <Nav {segment} />
-{/if}
+<RandomGel>
 
-<div id="main" class:constrain-content={segment !== 'home'}>
-  <slot />
-</div>
+  {#if segment !== 'home'}
+    <Nav {segment} />
+  {/if}
+
+  <div id="main" class:constrain-content={segment !== 'home'}>
+    <slot />
+  </div>
+
+</RandomGel>

@@ -4,7 +4,7 @@
 
 <style>
   div {
-    --gel-low: hsl(var(--hue), 20%, 50%);
+    --gel-low: hsla(var(--hue), 95%, 20%);
     --gel-high: hsl(var(--hue), 90%, 50%);
   }
 </style>

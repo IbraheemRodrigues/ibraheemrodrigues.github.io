@@ -1,7 +1,10 @@
 <script>
+  import NavButton from "./NavButton.svelte";
+
   import { onMount } from "svelte";
 
-  import RandomGel from "../RandomGel.svelte";
+  import { stores } from "@sapper/app";
+  const { page } = stores();
 
   export let segment;
 
@@ -17,24 +20,24 @@
 </script>
 
 <style>
-  * {
-    box-sizing: border-box;
-  }
-
   nav {
     border-bottom: 1px solid var(--gel-high);
     font-weight: 300;
-    padding: 0 1em;
+    padding: 0 1rem;
 
     height: var(--button-height);
 
-    --button-height: calc(3.5em + var(--button-border));
+    --button-height: calc(3.5rem + var(--button-border));
 
     --button-border: 8px;
   }
 
   .clip {
-    padding: 1em;
+    width: var(--button-height);
+    height: var(--button-height);
+
+    padding: 0.25rem;
+
     text-align: center;
 
     border-top: 0px solid transparent;
@@ -46,6 +49,11 @@
   .clip:hover {
     border-bottom-width: 1px;
     border-top-width: calc(var(--button-border) - 1px);
+  }
+
+  .clip img {
+    width: 100%;
+    height: 3rem;
   }
 
   #buttons {
@@ -81,35 +89,6 @@
     border-bottom: 1px solid var(--gel-high);
   }
 
-  .button a {
-    display: block;
-
-    padding: 1em;
-
-    line-height: 1.5;
-
-    height: var(--button-height);
-
-    border-top: 0px solid transparent;
-    border-bottom: var(--button-border) solid var(--gel-high);
-
-    transition: border-width 100ms ease;
-
-    text-decoration: none;
-  }
-
-  .button.selected a {
-    background: var(--gel-high);
-    color: black;
-
-    border-top: 1px solid black;
-  }
-
-  .button:not(.selected):hover a {
-    border-bottom-width: 1px;
-    border-top-width: calc(var(--button-border) - 1px);
-  }
-
   @media only screen and (min-width: 600px) {
     .clip {
       display: none;
@@ -128,56 +107,42 @@
       background: none;
     }
 
-    .button.selected a {
-      border-top: none;
-    }
-
     .button-spacer {
       border: none;
     }
   }
 </style>
 
-<RandomGel>
-  <nav bind:this={nav}>
+<nav bind:this={nav}>
 
-    <div class="clip">
-      <img src="/clip.svg" alt="&#128206;" />
+  <div class="clip">
+    <img src="/clip.svg" alt="&#128206;" />
 
-    </div>
+  </div>
 
-    <div id="buttons" class:open>
-      <div class="button" class:selected={segment === 'home'}>
-        <a href="/">home</a>
-      </div>
+  <div id="buttons" class:open>
 
-      <div class="button" class:selected={segment === 'p'}>
-        <a rel="prefetch" href="p">projects</a>
-      </div>
+    <NavButton link="/" selected={$page.path === '/'}>home</NavButton>
 
-      <!-- All elements below will be on the right -->
-      <div class="button-spacer" />
+    <NavButton link="/p" prefetch selected={segment === 'p'}>
+      projects
+    </NavButton>
 
-      <div class="button">
-        <a href="mailto:contact@ibraheemrodrigues.com">email</a>
-      </div>
+    <!-- All elements below will be on the right -->
+    <div class="button-spacer" />
 
-      <div class="button">
-        <a
-          href="https://www.youtube.com/channel/UCKe4t2irPeZfM4w_Hf7X1NA"
-          target="_blank"
-          rel="noopener">
-          youtube
-        </a>
-      </div>
+    <NavButton link="mailto:contact@ibraheemrodrigues.com" newTab>
+      email
+    </NavButton>
 
-      <div class="button">
-        <a href="https://github.com/IbraheemR/" target="_blank" rel="noopener">
-          github
-        </a>
-      </div>
+    <NavButton
+      link="https://www.youtube.com/channel/UCKe4t2irPeZfM4w_Hf7X1NA"
+      newTab>
+      youtube
+    </NavButton>
 
-    </div>
+    <NavButton link="https://github.com/IbraheemR/" newTab>github</NavButton>
 
-  </nav>
-</RandomGel>
+  </div>
+
+</nav>

@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
 	margin: 0;
 	font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -21,13 +25,31 @@ a {
 	color: inherit;
 }
 
+li::marker {
+	color: var(--gel-high);
+
+	font-weight: bold;
+}
+
 code {
-	font-family: menlo, inconsolata, monospace;
+	font-family: monospace;
 	font-size: calc(1em - 2px);
-	color: #555;
-	background-color: #f0f0f0;
-	padding: 0.2em 0.4em;
-	border-radius: 2px;
+	
+	padding: 0.1em 0.2em;
+
+	background-color: #333333;
+}
+
+/* Inline */
+:not(.content)>code {
+
+	border-bottom: 1px solid var(--gel-low);
+}
+
+blockquote {
+	margin-left: 0;
+	border-left: 4px solid var(--gel-high);
+	padding-left: 1em;
 }
 
 @media (min-width: 400px) {
