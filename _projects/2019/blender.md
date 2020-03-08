@@ -1,8 +1,8 @@
 ---
 title: 2019/2020 Blender Gallery
-description: Pushing for 52 renders by October 2020.
+description: I'm doing a deep dive into Blender 2.8 as part of my DofE Gold award by doing a render each week. See the results here!
 
-date: 2019-10-05 -
+date: 2020-03-08 -
 image: /assets/p/2019/blender/week1/lowpoly_procedural_island5.jpeg
 ---
 
@@ -98,3 +98,5 @@ I'm taking a break from Halley VI, and doing a smaller test.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/QMHGSHN71Z8?controls=0" frameborder="0" allowfullscreen></iframe>
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/MWLH2A2KOYs?controls=0" frameborder="0" allowfullscreen></iframe>
+
+> I'm going to end this here - I've surpassed the requirements for my DofE and I'm lacking motivation to continue amidst other projects and school work. 
