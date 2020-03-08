@@ -88,7 +88,7 @@ I've been following the work of [Roman Klčo](https://romanklco.com/) on his You
 
 I've embarked on a project to model the [Halley VI Antarctic](https://www.bas.ac.uk/polar-operations/sites-and-facilities/facility/halley/) research station in Blender. This will likely take me a few weeks, so here is a WIP screenshot for the last two weeks showing my progress.
 
-## Week 14 - Toroidal Annihilation
+## Week 14 - Toroidal Annihilation (Cycles)
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/9H9dEC7Tguk?controls=0" frameborder="0" allowfullscreen></iframe>
 
@@ -98,5 +98,14 @@ I'm taking a break from Halley VI, and doing a smaller test.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/QMHGSHN71Z8?controls=0" frameborder="0" allowfullscreen></iframe>
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/MWLH2A2KOYs?controls=0" frameborder="0" allowfullscreen></iframe>
+
+## Week 16 - Crystal 
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/q2NIgJqzots?controls=0" frameborder="0" allowfullscreen></iframe>
+
+
+## Week 17 - Cube Field (Cycles)
+
+![](/assets/p/2019/blender/week17/cube.jpeg)
 
 > I'm going to end this here - I've surpassed the requirements for my DofE and I'm lacking motivation to continue amidst other projects and school work. 
