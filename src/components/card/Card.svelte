@@ -1,37 +1,112 @@
 <script>
-  import RandomGel from "../RandomGel.svelte";
+  import Octicons from "@primer/octicons";
+
+  import RandomGel from "../gel/RandomGel.svelte";
+  import GelButton from "../gel/GelButton.svelte";
 
   export let data = {};
 </script>
 
 <style>
   .card {
-    border: 1px solid var(--gel-low);
-    padding: 0.5rem;
+    position: relative;
 
-    display: grid;
-    grid-template-areas: "img" "text";
+    height: 100%;
 
-    transition: border cubic-bezier(0.445, 0.05, 0.55, 0.95) 200ms;
+    border: 1px solid var(--gel-high);
+
+    display: flex;
+    flex-direction: column;
+
+    --gel-high: var(--gel-low-i);
   }
 
   .card:hover {
-    border: 1px solid var(--gel-high);
+    --gel-high: var(--gel-high-i);
   }
 
   a {
     text-decoration: none;
     color: white;
+
+    height: calc(var(--card-height) - 1rem);
+  }
+
+  .image {
+    width: 100%;
+    height: 15rem;
+
+    grid-area: image;
+
+    /* Image specified in inlin css */
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .title {
+    grid-area: title;
+
+    font-size: 1.2em;
+
+    padding: 0.5rem;
+  }
+  .description {
+    grid-area: description;
+
+    padding: 0.5rem;
+  }
+
+  .buttons {
+    --button-height: 2.5rem;
+
+    margin-top: auto;
+
+    display: flex;
+  }
+
+  .button a {
+    padding: 0 0.5rem;
+  }
+
+  .button :global(.octicon) {
+    width: 1em;
+    height: 1em;
+
+    /* shift image down to better align with text */
+    position: relative;
+    top: 0.1rem;
   }
 </style>
 
 <RandomGel>
-  <a href={data.link}>
-    <div class="card">
+  <div class="card">
 
-      <img src="" alt="" />
+    <a href={data.link}>
 
-      <div class="text">{data.text}</div>
+      <div class="image" style="background-image: url({data.image})" />
+
+      <div class="title">{data.title || ''}</div>
+      {#if data.description}
+        <div class="description">{data.description}</div>
+      {/if}
+    </a>
+
+    <div class="buttons">
+
+      {#if data.buttons}
+        {#each data.buttons as button}
+          <div class="button">
+            <GelButton>
+              <a href={button.link}>
+                {@html Octicons[button.icon].toSVG()}
+                {button.text}
+              </a>
+            </GelButton>
+          </div>
+        {/each}
+      {/if}
+
     </div>
-  </a>
+  </div>
 </RandomGel>

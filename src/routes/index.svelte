@@ -1,5 +1,5 @@
 <script>
-  import RandomGel from "../components/RandomGel.svelte";
+  import RandomGel from "../components/gel/RandomGel.svelte";
 
   import Card from "../components/card/Card.svelte";
   import SquaresHero from "../components/squares/SquaresHero.svelte";
@@ -38,7 +38,7 @@
 </style>
 
 <svelte:head>
-  <title>Ibby</title>
+  <title>Ibraheem Rodrigues | Programmer & Maker</title>
 </svelte:head>
 
 <div id="title">

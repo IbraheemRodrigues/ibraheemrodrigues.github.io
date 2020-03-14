@@ -3,7 +3,8 @@
     return this.fetch("https://content.ibraheemrodrigues.com/index.json")
       .then(r => r.json())
       .then(posts => {
-        return { posts };
+        return { posts: posts.filter(post => !post.meta.draft) };
+        // return { posts };
       });
   }
 </script>
@@ -15,20 +16,14 @@
   export let posts;
 </script>
 
-<style>
-
-</style>
-
 <svelte:head>
-  <title>Blog</title>
+  <title>Projects</title>
 </svelte:head>
-
-<h1>Posts & Projects</h1>
 
 <CardGrid>
   <!-- Sort posts in reverse date order  -->
   {#each posts.sort((a, b) => a.meta.date < b.meta.date) as post}
     <Card
-      data={{ text: post.meta.title, link: `${post.meta.redirect_to || post.url}` }} />
+      data={{ title: post.meta.title, link: `${post.meta.redirect_to || post.url}`, description: post.meta.description, image: post.meta.image, buttons: post.meta.links }} />
   {/each}
 </CardGrid>

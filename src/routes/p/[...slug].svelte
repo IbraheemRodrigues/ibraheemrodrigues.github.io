@@ -20,6 +20,13 @@
 </script>
 
 <style>
+  .constrain {
+    margin: 3rem auto 0 auto;
+
+    padding: 0 1rem;
+
+    max-width: 1300px;
+  }
   .content :global(h2) {
     font-size: 1.4em;
     font-weight: 500;
@@ -60,12 +67,15 @@
   <title>{post.meta.title}</title>
 </svelte:head>
 
-<h1>{post.meta.title}</h1>
+<div class="constrain">
 
-<div class="content">
-  {@html post.html}
+  <h1>{post.meta.title}</h1>
+
+  <div class="content">
+    {@html post.html}
+  </div>
+
+  <hr />
+
+  <Disqus identifier={post.slug} />
 </div>
-
-<hr />
-
-<Disqus identifier={post.slug} />

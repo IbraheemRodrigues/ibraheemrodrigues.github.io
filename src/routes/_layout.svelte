@@ -1,17 +1,9 @@
 <script>
-  import RandomGel from "../components/RandomGel.svelte";
+  import RandomGel from "../components/gel/RandomGel.svelte";
   import Nav from "../components/nav/Nav.svelte";
 
   export let segment;
 </script>
-
-<style>
-  .constrain-content {
-    max-width: 60rem;
-    margin: 0 auto;
-    padding: 1rem;
-  }
-</style>
 
 <RandomGel>
 
@@ -19,8 +11,6 @@
     <Nav {segment} />
   {/if}
 
-  <div id="main" class:constrain-content={segment !== 'home'}>
-    <slot />
-  </div>
+  <slot />
 
 </RandomGel>
