@@ -19,7 +19,7 @@
   }
 </style>
 
+<!-- Should be parent of a flexbox -->
 <div class="gel-button">
-
   <slot />
 </div>
