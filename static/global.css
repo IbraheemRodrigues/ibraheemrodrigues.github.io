@@ -61,3 +61,11 @@ blockquote {
 .octicon {
 	fill: white;
 }
+
+.content img {
+	width: 100%;
+}
+
+.content .half-image {
+	width: 49%;
+}
