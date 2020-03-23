@@ -3,6 +3,11 @@
     return this.fetch("https://content.ibraheemrodrigues.com/index.json")
       .then(r => r.json())
       .then(posts => {
+        // prefetch image thumbnails
+        posts.forEach(post => {
+          this.fetch(post.meta.image);
+        });
+
         return { posts: posts.filter(post => !post.meta.draft) };
         // return { posts };
       });
