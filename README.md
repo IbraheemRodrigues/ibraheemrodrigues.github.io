@@ -3,7 +3,7 @@ My blogging and project post site
 
 Versions:
 
-`Halite` - Indev version, Netlify + JAMstack(ish)
-`Calcite` - Current version, GHPages
-`Emerald` - Old version using django
+- `Halite` - Indev version, Netlify + JAMstack(ish) (`halite-dev`)
+- `Calcite` - Current version, GHPages (`master`)
+- `Emerald` - Old version using django (`emerald`)
 
