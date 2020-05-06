@@ -128,6 +128,10 @@
       projects
     </NavButton>
 
+    <NavButton link="https://spegman.ibraheemrodrigues.com" newTab>
+      spegman's guide
+    </NavButton>
+
     <!-- All elements below will be on the right -->
     <div class="button-spacer" />
 
