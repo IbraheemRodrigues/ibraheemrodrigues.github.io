@@ -25,7 +25,9 @@
 
     padding: 0 1rem;
 
-    max-width: 1300px;
+    max-width: 1100px;
+
+    font-size: 20px;
   }
   .content :global(h2) {
     font-size: 1.4em;
