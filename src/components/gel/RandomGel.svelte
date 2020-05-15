@@ -5,8 +5,8 @@
 <style>
   div {
     /* Not designed to be overridden */
-    --gel-low-i: hsla(var(--hue), 95%, 30%) !important;
-    --gel-high-i: hsl(var(--hue), 90%, 60%) !important;
+    --gel-low-i: hsla(var(--hue), 99%, 50%, 50%) !important;
+    --gel-high-i: hsl(var(--hue), 90%, 50%) !important;
 
     --gel-low: var(--gel-low-i);
     --gel-high: var(--gel-high-i);

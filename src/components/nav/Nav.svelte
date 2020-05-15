@@ -30,6 +30,8 @@
     --button-height: calc(3.5rem + var(--button-border));
 
     --button-border: 8px;
+
+    font-family: var(--theme-title-font);
   }
 
   .clip {
@@ -89,7 +91,7 @@
     border-bottom: 1px solid var(--gel-high);
   }
 
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 700px) {
     .clip {
       display: none;
     }
@@ -127,6 +129,10 @@
     <NavButton link="/p" prefetch selected={segment === 'p'}>
       projects
     </NavButton>
+
+    <!-- <NavButton link="/hmm" prefetch selected={segment === 'hmm'}>
+      thoughts
+    </NavButton> -->
 
     <NavButton link="https://spegman.ibraheemrodrigues.com" newTab>
       spegman's guide

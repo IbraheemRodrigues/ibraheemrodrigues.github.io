@@ -5,6 +5,10 @@
   import GelButton from "../gel/GelButton.svelte";
 
   export let data = {};
+  let date;
+  $: if (data.date) {
+    date = new Date(data.date.split(" ")[0]);
+  }
 </script>
 
 <style>
@@ -18,16 +22,21 @@
     display: flex;
     flex-direction: column;
 
-    --gel-high: var(--gel-low-i);
+    position: relative;
+    bottom: 0;
+    box-shadow: 0 0 0 0 var(--gel-high);
+
+    transition: all 100ms ease;
   }
 
   .card:hover {
-    --gel-high: var(--gel-high-i);
+    bottom: 0.4em;
+    box-shadow: 0 0.4em 0 0 var(--gel-high);
   }
 
   a {
     text-decoration: none;
-    color: white;
+    color: var(--theme-text-color);
 
     height: calc(var(--card-height) - 1rem);
   }
@@ -36,8 +45,6 @@
     width: 100%;
     height: 15rem;
 
-    grid-area: image;
-
     /* Image specified in inlin css */
 
     background-repeat: no-repeat;
@@ -45,16 +52,14 @@
     background-size: cover;
   }
   .title {
-    grid-area: title;
+    font-family: var(--theme-title-font);
 
     font-size: 1.2em;
 
-    padding: 0.5rem;
+    padding: 0.2rem 0.5rem 0 0.5rem;
   }
   .description {
-    grid-area: description;
-
-    padding: 0.5rem;
+    padding: 0 0.5rem 0.5rem 0.5rem;
   }
 
   .buttons {
@@ -77,6 +82,19 @@
     position: relative;
     top: 0.1rem;
   }
+
+  .date {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    padding: 0.2em 0.5rem;
+
+    color: var(--theme-background);
+    font-family: var(--theme-title-font);
+
+    background: var(--gel-low);
+  }
 </style>
 
 <RandomGel>
@@ -90,7 +108,14 @@
       {#if data.description}
         <div class="description">{data.description}</div>
       {/if}
+
     </a>
+
+    {#if date}
+      <div class="date">
+        {String(date.getDate()).padStart(2, '0')}/{String(date.getMonth() + 1).padStart(2, '0')}/{date.getFullYear()}
+      </div>
+    {/if}
 
     <div class="buttons">
 

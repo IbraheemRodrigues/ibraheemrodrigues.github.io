@@ -6,11 +6,11 @@
     const json = await res.json();
 
     if (res.status === 200) {
-      json.p.forEach(post => {
+      json.thoughts.forEach(post => {
         this.fetch(post.meta.image);
       });
 
-      return { posts: json.p.filter(post => !post.meta.draft) };
+      return { posts: json.thoughts.filter(post => !post.meta.draft) };
     } else {
       this.error(res.status, data.message);
     }

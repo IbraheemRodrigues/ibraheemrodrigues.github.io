@@ -37,14 +37,14 @@
     border-bottom-width: calc(var(--button-border) / 2);
 
     background: var(--gel-high);
-    color: black;
+    color: var(--theme-background);
   }
 
   .button.selected:not(:first-child) a {
-    border-top: 1px solid black;
+    border-top: 1px solid var(--theme-background);
   }
 
-  .button:not(.selected):hover a {
+  .button:hover a {
     border-bottom-width: 1px;
     border-top-width: calc(var(--button-border) - 1px);
   }

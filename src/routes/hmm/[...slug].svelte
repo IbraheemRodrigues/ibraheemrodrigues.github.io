@@ -2,7 +2,7 @@
   import API from "../../api";
 
   export async function preload({ params, query }) {
-    const res = await this.fetch(`${API}/p/${params.slug.join("/")}.json`);
+    const res = await this.fetch(`${API}/${params.slug.join("/")}.json`);
     const data = await res.json();
 
     if (res.status === 200) {

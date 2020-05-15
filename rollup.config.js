@@ -9,6 +9,8 @@ import pkg from './package.json';
 
 import json from '@rollup/plugin-json';
 
+import dotenv from 'dotenv';
+dotenv.config();
 
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
