@@ -2,15 +2,18 @@
   import API from "../../api";
 
   export async function preload({ params, query }) {
-    const res = await this.fetch(`${API}/index.json`);
-    const json = await res.json();
-
+    let res = await this.fetch(`${API}/index.json`);
     if (res.status === 200) {
-      json.thoughts.forEach(post => {
-        this.fetch(post.meta.image);
-      });
+      let json = await res.json();
+      let thoughts = json.hmm || [];
 
-      return { posts: json.thoughts.filter(post => !post.meta.draft) };
+      for (let i in thoughts) {
+        let res2 = await this.fetch(`${API}/${thoughts[i].data}`);
+        let json2 = await res2.json();
+        thoughts[i].html = json2.html;
+      }
+
+      return { posts: thoughts.filter(post => !post.meta.draft) };
     } else {
       this.error(res.status, data.message);
     }
@@ -18,20 +21,26 @@
 </script>
 
 <script>
-  import CardGrid from "../../components/card/CardGrid.svelte";
-  import Card from "../../components/card/Card.svelte";
+  import Constrain from "../../components/Constrain.svelte";
 
   export let posts;
 </script>
 
 <svelte:head>
-  <title>Projects</title>
+  <title>Thoughts</title>
 </svelte:head>
 
-<CardGrid>
+<Constrain>
+  <h1>Hmm...</h1>
   <!-- Sort posts in reverse date order  -->
   {#each posts.sort((a, b) => a.meta.date < b.meta.date) as post}
-    <Card
-      data={{ title: post.meta.title, link: `${post.meta.redirect_to || post.url}`, description: post.meta.description, date: post.meta.date, image: post.meta.image, buttons: post.meta.links }} />
+    <hr />
+
+    <h2>{post.meta.title}</h2>
+    {@html post.html}
+
+    <!-- NOTE: For the moment not linking to though pages, even though they do excist. Implement this in the future -->
+  {:else}
+    <h2>Look at that nothing is here how odd.</h2>
   {/each}
-</CardGrid>
+</Constrain>

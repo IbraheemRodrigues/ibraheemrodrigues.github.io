@@ -4,13 +4,14 @@
   export async function preload({ params, query }) {
     const res = await this.fetch(`${API}/index.json`);
     const json = await res.json();
+    const projects = json.p || [];
 
     if (res.status === 200) {
-      json.p.forEach(post => {
+      projects.forEach(post => {
         this.fetch(post.meta.image);
       });
 
-      return { posts: json.p.filter(post => !post.meta.draft) };
+      return { posts: projects.filter(post => !post.meta.draft) };
     } else {
       this.error(res.status, data.message);
     }

@@ -16,10 +16,23 @@
     nav.onclick = () => {
       open = !open;
     };
+
+    // Reset if resize and in doing so change nav menu type
+    window.addEventListener("resize", () => {
+      if (document.querySelector(":root").clientWidth > 700) {
+        open = false;
+      }
+    });
   });
 </script>
 
 <style>
+  :global(:root) {
+    --button-height: calc(3.5rem + var(--button-border));
+
+    --button-border: 8px;
+  }
+
   nav {
     border-bottom: 1px solid var(--gel-high);
     font-weight: 300;
@@ -27,11 +40,16 @@
 
     height: var(--button-height);
 
-    --button-height: calc(3.5rem + var(--button-border));
-
-    --button-border: 8px;
-
     font-family: var(--theme-title-font);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    background-color: var(--theme-background);
+
+    z-index: 200;
   }
 
   .clip {
@@ -113,9 +131,17 @@
       border: none;
     }
   }
+
+  :global(body) {
+    padding-top: var(--button-height);
+  }
+
+  nav.home {
+    background-color: transparent;
+  }
 </style>
 
-<nav bind:this={nav}>
+<nav bind:this={nav} class:home={$page.path === '/'}>
 
   <div class="clip">
     <img src="/clip.svg" alt="&#128206;" />
@@ -130,9 +156,9 @@
       projects
     </NavButton>
 
-    <!-- <NavButton link="/hmm" prefetch selected={segment === 'hmm'}>
+    <NavButton link="/hmm" prefetch selected={segment === 'hmm'}>
       thoughts
-    </NavButton> -->
+    </NavButton>
 
     <NavButton link="https://spegman.ibraheemrodrigues.com" newTab>
       spegman's guide

@@ -1,1 +1,1 @@
-export default "https://content.ibraheemrodrigues.com";
+export default "http://localhost:5500/_export"

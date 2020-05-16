@@ -4,7 +4,7 @@
 
 <style>
   div {
-    margin: 0 auto;
+    margin: 3rem auto 0 auto;
 
     padding: 0 1rem;
 
