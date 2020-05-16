@@ -2,4 +2,4 @@
 //  Need to figure out better devops structure for this site.
 //  Make sure this is NEVER changed in a commit
 
-export default "http://content.ibraheemrodrigues.com"
+export default "https://content.ibraheemrodrigues.com"
