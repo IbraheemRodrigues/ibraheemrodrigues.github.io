@@ -12,4 +12,4 @@
   sad: yes
 
 - name: more
-  url: /more
+  url: "#more"

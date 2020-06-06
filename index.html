@@ -2,7 +2,6 @@
 ---
 <link rel="stylesheet" href="/assets/css/index.css">
 
-
 <div id="container">
     <h1>{{site.title}}</h1>
 
@@ -15,6 +14,8 @@
     </div>
 </div>
 
+
+
 <!-- Begin squares sketch -->
 
 <div id="squares"></div>
@@ -25,3 +26,12 @@
     const container = document.querySelector("#squares");
     new p5(squaresSketch(container), container)
 </script>
+
+<div id="more">
+    {%- for link in site.data.more -%}
+    <a href="{{link.url}}">{{link.name}}</a>
+    {%- if link.description -%}
+    <span class="description sad">{{link.description}}</span>
+    {%- endif -%}
+    {%- endfor -%}
+</div>
