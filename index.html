@@ -9,7 +9,7 @@
 
     <div id="links">
         {%- for link in site.data.links -%}
-        <a href="{{link.url}}" {%- if link.sad -%} class="sad" {%- endif -%}>{{link.name}}</a>
+        <a href="{{link.url}}" {%- if link.sad -%} class="sad" {%- endif -%}>{{link.name}}</a><br>
         {%- endfor -%}
     </div>
 </div>

@@ -1,4 +1,5 @@
-const squaresSketch = (sketch_container) => p => {
+const squaresSketch = () => p => {
+    const size_container = document.querySelector("body");
     const NUM = 100,
         EXP_T = 5;
 
@@ -10,7 +11,7 @@ const squaresSketch = (sketch_container) => p => {
     };
 
     p.setup = () => {
-        p.createCanvas(sketch_container.clientWidth, sketch_container.clientHeight);
+        p.createCanvas(size_container.clientWidth, size_container.clientHeight);
         for (let i = 0; i < NUM; i++) {
             p.state.objs.push({
                 d: Math.random() * vmax,
@@ -123,18 +124,18 @@ const squaresSketch = (sketch_container) => p => {
 
     p.windowResized = () => {
         vmin = Math.min(
-            sketch_container.clientWidth,
-            sketch_container.clientHeight
+            size_container.clientWidth,
+            size_container.clientHeight
         );
         vmax = Math.max(
-            sketch_container.clientWidth,
-            sketch_container.clientHeight
+            size_container.clientWidth,
+            size_container.clientHeight
         );
 
-        x_offset = sketch_container.clientWidth / 7;
-        y_offset = sketch_container.clientHeight / 5;
+        x_offset = size_container.clientWidth / 7;
+        y_offset = size_container.clientHeight / 5;
 
-        p.resizeCanvas(sketch_container.clientWidth, sketch_container.clientHeight);
+        p.resizeCanvas(size_container.clientWidth, size_container.clientHeight);
     };
     p.windowResized();
 };

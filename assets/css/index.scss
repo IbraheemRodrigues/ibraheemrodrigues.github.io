@@ -6,13 +6,11 @@ body {
 }
 
 #container {
-    z-index: 100;
-    position: absolute;
-    top: calc(100vh / 5 + 100vmin/32);
-    left: calc(100vw / 7 + 150vmin/32);
+    padding: calc(100vh / 5 + 100vmin/32)
+     calc(100vw / 7 + 150vmin/32);
 
-    width: calc(500vw/7);
-    height: calc(300vh/5);
+    height: 100vh;
+
 
     h1, h2 {
         margin: 0;
@@ -29,18 +27,18 @@ body {
     #links {
         text-align: right;
         margin-top: 3em;
-        a {
-            display: block;
-        }
-
     }
 }
  
 
 #squares {
-    height: 100%;
-    min-height: 100vh;
     overflow: hidden;
+
+    position: absolute;
+    top:0;
+    left: 0;
+
+    z-index: -100;
 }
 
 #more {
