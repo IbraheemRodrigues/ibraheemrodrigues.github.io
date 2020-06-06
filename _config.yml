@@ -1,0 +1,22 @@
+title: Ibraheem Rodrigues
+description: Programmer and Maker
+url: https://ibraheemrodrigues.com
+
+author: Ibraheem Rodrigues
+logo: TODO
+
+social:
+  name: Ibaheem Rodrigues
+  links:
+    - https://github.com/IbraheemR
+    - https://instagram.com/IbraheeemR
+    - https://www.youtube.com/channel/UCKe4t2irPeZfM4w_Hf7X1N
+    - mailto:contact@ibraheemrodrigues.com
+
+plugins:
+  - jekyll-seo-tag
+
+defaults:
+  -
+    values:
+      layout: default

@@ -1,0 +1,15 @@
+- name: projects
+  url: https://instagram.com/ibraheeemr
+- name: videos
+  url: https://www.youtube.com/channel/UCKe4t2irPeZfM4w_Hf7X1NA
+  sad: yes
+
+- name: github
+  url: https://github.com/IbraheemR
+  sad: yes
+- name: email
+  url: mailto:contact@ibraheemrodrigues.com
+  sad: yes
+
+- name: more
+  url: /more

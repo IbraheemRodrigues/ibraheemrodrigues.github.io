@@ -1,0 +1,35 @@
+---
+---
+
+<style>
+    body {
+        padding: 1em;
+    }
+
+    #back {
+        font-size: 1.5em;
+        margin: 0 1em;
+    }
+
+    #links {
+        margin: 3em;
+    }
+
+    .description {
+        font-size: .8em;
+        margin-left: 1em;
+        margin-bottom: 1em;
+        display: block;
+    }
+</style>
+
+<a href="/" id="back">home</a>
+
+<div id="links">
+    {%- for link in site.data.more -%}
+    <a href="{{link.url}}">{{link.name}}</a>
+    {%- if link.description -%}
+    <span class="description sad">{{link.description}}</span>
+    {%- endif -%}
+    {%- endfor -%}
+</div>

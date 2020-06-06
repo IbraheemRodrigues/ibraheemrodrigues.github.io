@@ -1,0 +1,43 @@
+---
+---
+
+body {
+    overflow: hidden;
+}
+
+#container {
+    z-index: 100;
+    position: absolute;
+    top: calc(100vh / 5 + 100vmin/32);
+    left: calc(100vw / 7 + 150vmin/32);
+
+    width: calc(500vw/7);
+    height: calc(300vh/5);
+
+    h1, h2 {
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 6vmin
+    }
+    
+    h2 {
+        font-size: 4vmin
+    }
+
+    #links {
+        text-align: right;
+        margin-top: 3em;
+        a {
+            display: block;
+        }
+    }
+}
+ 
+
+#squares {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
