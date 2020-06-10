@@ -42,20 +42,19 @@ body {
 }
 
 #more {
-
     min-height: 100vh;
 
     padding: 3em 3em 0 3em;
 
-    a::after {
-        content: "↗";
-    }
-    
-
-    .description {
-        font-size: .6em;
-        margin-left: 1em;
-        margin-bottom: 1em;
-        display: block;
+    .link {
+        a::after {
+            content: "↗";
+        }
+        
+        .description {
+            font-size: .6em;
+            margin-left: 1em;
+            margin-bottom: 1em;
+        }
     }
 }
