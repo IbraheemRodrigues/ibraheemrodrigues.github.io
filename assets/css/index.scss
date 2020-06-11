@@ -1,6 +1,10 @@
 ---
 ---
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     overflow-x: hidden;
 }
@@ -47,6 +51,8 @@ body {
     padding: 3em 3em 0 3em;
 
     .link {
+        max-width: 25em;
+
         a::after {
             content: "↗";
         }
