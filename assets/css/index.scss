@@ -12,7 +12,8 @@ body {
 #main {
   position: relative;
 
-  padding: 3em 3em 0 3em;
+  padding: calc(100vh / 5 + 100vmin / 32) calc(100vw / 7 + 150vmin / 32) 0
+    calc(100vw / 7 + 150vmin / 32);
 
   height: 94vh;
 
