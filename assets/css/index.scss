@@ -2,65 +2,85 @@
 ---
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
-#container {
-    padding: calc(100vh / 5 + 100vmin/32)
-     calc(100vw / 7 + 150vmin/32);
+#main {
+  position: relative;
 
-    height: 100vh;
+  padding: 3em 3em 0 3em;
 
+  height: 94vh;
 
-    h1, h2 {
-        margin: 0;
-    }
-
-    h1 {
-        font-size: 6vmin
-    }
-    
-    h2 {
-        font-size: 4vmin
-    }
-
-    #links {
-        text-align: right;
-        margin-top: 3em;
-    }
-}
- 
-
-#squares {
-    overflow: hidden;
-
+  #nudge {
     position: absolute;
-    top:0;
-    left: 0;
+    top: 94vh;
+    right: 1rem;
 
-    z-index: -100;
+    padding: 0 1em;
+
+    max-width: 6vh;
+
+    font-size: 0.3em;
+    text-align: center;
+    color: #aaaaaa;
+
+    transform: rotate(90deg);
+
+    border-color: #aaaaaa;
+    border-style: solid;
+    border-width: 0 2px;
+  }
+
+  h1,
+  h2 {
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 6vmin;
+  }
+
+  h2 {
+    font-size: 4vmin;
+  }
+
+  #links {
+    text-align: right;
+    margin-top: 3em;
+  }
 }
 
 #more {
-    min-height: 100vh;
+  min-height: 100vh;
 
-    padding: 3em 3em 0 3em;
+  padding: 0 3em;
 
-    .link {
-        max-width: 25em;
+  .link {
+    max-width: 25em;
 
-        a::after {
-            content: "↗";
-        }
-        
-        .description {
-            font-size: .6em;
-            margin-left: 1em;
-            margin-bottom: 1em;
-        }
+    a::after {
+      content: "↗";
     }
+
+    .description {
+      font-size: 0.6em;
+      margin-left: 1em;
+      margin-bottom: 1em;
+    }
+  }
+}
+
+#squares {
+  overflow: hidden;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  z-index: -100;
 }

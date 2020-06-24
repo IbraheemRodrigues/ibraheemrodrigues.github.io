@@ -4,6 +4,9 @@
 - name: StoryTyper
   description: Practice touchtyping with a story.
   url: https://type.ibraheemrodrigues.com
+- name: Catchment Area Checker
+  description: A widget to check practice catchment areas, made for Cheviot Ltd.
+  url: https://catchment.cheviot.tech/
 - name: Project Wormwood
   url: https://wormwood.ibraheemrodrigues.com
 - name: OneShot
