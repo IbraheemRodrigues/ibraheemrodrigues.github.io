@@ -1,25 +1,11 @@
 ---
 title: DofE Skills -  Blender Gallery
-layout: default
 ---
 
-<style>
-  body {
-    margin: 0 auto;
-    max-width: 1200px;
-    font-size: 1rem;
-  }
-
-  img {
-    max-width: 100%;
-  }
-</style>
-
-<h1>DofE Skills - Blender Gallery</h1>
 
 ## Week 1 - Procedural Landscape Generation (Cycles)
 
-The first image is my rendition of[this](https://www.youtube.com/watch?v=yrMee2gcS20) tutorial. I wasnsatisfied with my texturing, so I adapted the same technique with my own shader to create the low-poly Mars-like render on the right. Complete with martian birds! I've done some similar tests using animation nodes to warp amesh, which I think would be more efficient, however, it's been hard to getthe same easing in the height.
+The first image is my rendition of [this](https://www.youtube.com/watch?v=yrMee2gcS20) tutorial. I wasnsatisfied with my texturing, so I adapted the same technique with my own shader to create the low-poly Mars-like render on the right. Complete with martian birds! I've done some similar tests using animation nodes to warp amesh, which I think would be more efficient, however, it's been hard to getthe same easing in the height.
 
 
 ![](week1b.png)
