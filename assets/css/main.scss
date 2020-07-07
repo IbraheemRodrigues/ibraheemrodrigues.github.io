@@ -3,6 +3,12 @@
 
 @import url("https://fonts.googleapis.com/css2?family=DM+Mono");
 
+@font-face {
+  font-family: "color-emoji";
+  src: local("Apple Color Emoji"), local("Segoe UI Emoji"),
+    local("Segoe UI Symbol"), local("Noto Color Emoji");
+}
+
 * {
   box-sizing: border-box;
 }
@@ -23,7 +29,7 @@ body {
 body {
   background-color: black;
   color: white;
-  font-family: "DM Mono", monospace;
+  font-family: "DM Mono", monospace, color-emoji;
   font-size: 30px;
   position: relative;
 }
