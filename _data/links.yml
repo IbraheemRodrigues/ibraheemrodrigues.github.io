@@ -10,6 +10,9 @@
 - name: email
   url: mailto:contact@ibraheemrodrigues.com
   sad: yes
+  
+- name: NOW
+  url: https://now.ibraheemrodrigues.com
 
 - name: more
   url: "#more"
