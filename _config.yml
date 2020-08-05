@@ -3,7 +3,7 @@ description: Programmer and Maker
 url: https://ibraheemrodrigues.com
 
 author: Ibraheem Rodrigues
-logo: /assets/logos/clip.png
+logo: /assets/logos/baub.png
 
 social:
   name: Ibaheem Rodrigues
@@ -17,6 +17,5 @@ plugins:
   - jekyll-seo-tag
 
 defaults:
-  -
-    values:
+  - values:
       layout: default
