@@ -1,3 +1,6 @@
+- name: 🕰️ NOW Clock
+  description: The human brain is 100ms behind reality. See whats happening in the NOW.
+  url: https://now.ibraheemrodrigues.com
 - name: 📖 Spegman's Every Ref
   description: A collection of useful and interesting facts, figures and charts.
   url: https://spegman.ibraheemrodrigues.com
@@ -7,7 +10,7 @@
 - name: 🗺 Catchment Area Checker
   description: A widget to check practice catchment areas, made for Cheviot Ltd.
   url: https://catchment.cheviot.tech/
-- name: 🔧Project Wormwood
+- name: Project Wormwood
   url: https://wormwood.ibraheemrodrigues.com
 - name: 🚀OneShot
   description: One Life, One Shot. Survive!

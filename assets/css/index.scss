@@ -22,29 +22,9 @@ a:hover {
   position: relative;
 
   padding: calc(100vh / 5 + 100vmin / 32) calc(100vw / 7 + 150vmin / 32) 0
-    calc(100vw / 7 + 150vmin / 32);
+    calc(100vw / 7 + 150vmin / 32); // Position text next to canvas item
 
-  height: 94vh;
-
-  #nudge {
-    position: absolute;
-    top: 94vh;
-    right: 1rem;
-
-    padding: 0 1em;
-
-    max-width: 6vh;
-
-    font-size: 0.3em;
-    text-align: center;
-    color: #aaaaaa;
-
-    transform: rotate(90deg);
-
-    border-color: #aaaaaa;
-    border-style: solid;
-    border-width: 0 2px;
-  }
+  min-height: 100vh;
 
   h1,
   h2 {

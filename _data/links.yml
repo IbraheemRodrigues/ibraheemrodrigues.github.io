@@ -1,18 +1,14 @@
-- name: projects
+- name: projects/instagram
   url: https://instagram.com/ibraheeemr
-- name: videos
-  url: https://www.youtube.com/channel/UCKe4t2irPeZfM4w_Hf7X1NA
-  sad: yes
-
-- name: github
+- name: code/github
   url: https://github.com/IbraheemR
-  sad: yes
+
 - name: email
   url: mailto:contact@ibraheemrodrigues.com
   sad: yes
-  
-- name: NOW
-  url: https://now.ibraheemrodrigues.com
+- name: videos
+  url: https://www.youtube.com/channel/UCKe4t2irPeZfM4w_Hf7X1NA
+  sad: yes
 
 - name: more
   url: "#more"

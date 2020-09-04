@@ -9,10 +9,6 @@ layout: minimal
 
   <h2>{{site.description}}</h2>
 
-  <div id="nudge">
-    1 nudge unit
-  </div>
-
   <div id="links">
     {%- for link in site.data.links -%}
     <a href="{{link.url}}" {%- if link.sad -%} class="sad" {%- endif -%}
