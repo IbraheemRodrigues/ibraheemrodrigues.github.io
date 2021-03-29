@@ -18,33 +18,6 @@ a:hover {
   text-decoration: underline;
 }
 
-#main {
-  position: relative;
-
-  padding: calc(100vh / 5 + 100vmin / 32) calc(100vw / 7 + 150vmin / 32) 0
-    calc(100vw / 7 + 150vmin / 32); // Position text next to canvas item
-
-  min-height: 100vh;
-
-  h1,
-  h2 {
-    margin: 0;
-  }
-
-  h1 {
-    font-size: 6vmin;
-  }
-
-  h2 {
-    font-size: 4vmin;
-  }
-
-  #links {
-    text-align: right;
-    margin-top: 3em;
-  }
-}
-
 #more {
   min-height: 100vh;
 

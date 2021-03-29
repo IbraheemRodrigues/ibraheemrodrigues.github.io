@@ -12,6 +12,8 @@ const squaresSketch = () => p => {
 
     p.setup = () => {
         p.createCanvas(size_container.clientWidth, size_container.clientHeight);
+        p.windowResized();
+
         for (let i = 0; i < NUM; i++) {
             p.state.objs.push({
                 d: Math.random() * vmax,
@@ -124,18 +126,17 @@ const squaresSketch = () => p => {
 
     p.windowResized = () => {
         vmin = Math.min(
-            size_container.clientWidth,
-            size_container.clientHeight
+            window.innerWidth,
+            window.innerHeight
         );
         vmax = Math.max(
-            size_container.clientWidth,
-            size_container.clientHeight
+            window.innerWidth,
+            window.innerHeight
         );
 
-        x_offset = size_container.clientWidth / 7;
-        y_offset = size_container.clientHeight / 5;
+        x_offset = window.innerWidth / 7;
+        y_offset = window.innerHeight / 5;
 
         p.resizeCanvas(size_container.clientWidth, size_container.clientHeight);
     };
-    p.windowResized();
 };
