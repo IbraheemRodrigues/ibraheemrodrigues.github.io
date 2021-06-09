@@ -26,11 +26,6 @@ a:hover {
   .link {
     max-width: 25em;
 
-    a::after {
-      content: "↗";
-      font-family: "DM Mono", monospace;
-    }
-
     .description {
       font-size: 0.6em;
       margin-left: 1em;
