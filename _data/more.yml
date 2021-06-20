@@ -1,3 +1,6 @@
+- name: MNIST Explorer
+  description: Team project to visulise the classic MNIST classifier AI
+  url: https://mnist.ibraheemrodrigues.com
 - name: NOW Clock
   description: The human brain is 100ms behind reality. See whats happening in the NOW.
   url: https://now.ibraheemrodrigues.com
